@@ -4,16 +4,29 @@ skills = require './skills.json'
 
 skills = skills.map (skill) ->
   if !!skill.dependencies
-    console.log skill.dependencies
     skill.dependencies = skill.dependencies.split ','
-    console.log skill.dependencies
   else
     skill.dependencies = null
   return skill
 
+skillIdMapper = (skills, id) ->
+  (skill._id for skill in skills when skill.skillId == +id)[0]
+
+remapDependencies = (skills) ->
+  skills.map (skill) ->
+    if skill.dependencies
+      skill.dependencies = skill.dependencies.map (dependency) ->
+        skillIdMapper skills, dependency
+    skill
+
 MongoClient.connect 'mongodb://localhost:27017/wwmc', (err, db) ->
   throw err if err
-  db.collection('skills').insert skills, (err, docs) ->
+  collection = db.collection('skills')
+  collection.drop (err) ->
     throw err if err
-    console.log docs
-    db.close()
+    collection.insert skills, (err, docs) ->
+      throw err if err
+      for doc in remapDependencies docs
+        collection.update {"_id": doc._id}, {"$set": {"dependencies": doc.dependencies}, "$unset": {"skillId": true}}, {}, (err) ->
+          throw err if err
+      db.close()

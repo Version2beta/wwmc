@@ -132,15 +132,19 @@ body {
 }
 .skill {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 0;
+  left: 0;
   background: #afdef0;
-  border: 6px solid #87afc7;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
+  border: 1px solid #87afc7;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
   color: #000;
+  overflow: hidden;
   padding: 6px;
   text-decoration: none;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .skill:active,
 .skill:focus {
