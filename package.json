@@ -16,8 +16,8 @@
     "coffee-script": "~1.6.3",
     "stylus": "~0.40.0",
     "nib": "~1.0.1",
-    "connect-assets": "~2.5.3",
-    "connect-coffee-script": "~0.1.6"
+    "connect-coffee-script": "~0.1.6",
+    "mongoose": "~3.8.0"
   },
   "engines": {
     "node": "0.10.x"
