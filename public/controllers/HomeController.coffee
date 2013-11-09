@@ -1,8 +1,14 @@
 
-vScale = 46
-hScale = 10 # pixels per month
+# on hover, expand
 
 layoutSkills = (skills) ->
+  windowWidth = $(window).width()
+  windowHeight = $(window).height()
+
+  # width of screen is 4 years
+  hScale = windowWidth / (12 * 4)
+  vScale = 36
+
   rows = [{
     skills: []
   }]
@@ -15,14 +21,14 @@ layoutSkills = (skills) ->
         rowSkillEnd = rowSkill.developmentalAge + rowSkill.developmentalAgeRange
 
         # is skill left between rowSkill left and right
-        skillStartWithinRowSkill = skill.developmentalAge >= rowSkill.developmentalAge && skill.developmentalAge <= rowSkillEnd
+        skillStartWithinRowSkill = skill.developmentalAge >= rowSkill.developmentalAge && skill.developmentalAge < rowSkillEnd
         # is skill right between rowSkill left and right
-        skillEndWithinRowSkill = skillEnd >= rowSkill.developmentalAge && skillEnd <= rowSkillEnd
+        skillEndWithinRowSkill = skillEnd > rowSkill.developmentalAge && skillEnd < rowSkillEnd
 
         # is rowSkill left between skill left and right
-        rowSkillStartWithinSkill = rowSkill.developmentalAge >= skill.developmentalAge && rowSkill.developmentalAge <= skillEnd
+        rowSkillStartWithinSkill = rowSkill.developmentalAge > skill.developmentalAge && rowSkill.developmentalAge < skillEnd
         # is rowSkill right between skill left and right
-        rowSkillEndWithinSkill = rowSkillEnd >= skill.developmentalAge && rowSkillEnd <= skillEnd
+        rowSkillEndWithinSkill = rowSkillEnd > skill.developmentalAge && rowSkillEnd < skillEnd
 
         if skillStartWithinRowSkill || skillEndWithinRowSkill || rowSkillStartWithinSkill || rowSkillEndWithinSkill
           # it overlaps
@@ -47,31 +53,24 @@ layoutSkills = (skills) ->
     width = skill.developmentalAgeRange * hScale
     skill.layout = {
       width: width + 'px'
-      left: (skill.developmentalAge * hScale) + 'px'
+      left: ((skill.developmentalAge - 1) * hScale) + 'px'
       row: rowIndex
       top: (rowIndex * vScale) + 'px'
     }
 
-  skills
 
 
+window.HomeCtrl = ($scope, $http) ->
+  reLayout = ->
+    layoutSkills $scope.skills
 
+  $(window).on 'resize', ->
+    $scope.$apply reLayout
 
+  $http.get('/skills')
+    .success (skills) ->
+      $scope.skills = skills
+      reLayout()
+    .error (err) ->
+      alert "Error loading skills: #{err}"
 
-window.HomeCtrl = ($scope) ->
-
-  skills = for i in [0..100]
-    {
-      _id: "23",
-      title: "Eye hand movement",
-      description: "Eye–hand movements better coordinated; can put objects together, take them apart; fit large pegs into pegboard.",
-      developmentalAge: Math.floor(Math.random() * 128),
-      developmentalAgeRange: Math.floor(Math.random() * 20) + 6,
-      dependencies: [
-      ],
-      categories: [
-        "cognitive"
-      ]
-    }
-
-  $scope.skills = layoutSkills skills

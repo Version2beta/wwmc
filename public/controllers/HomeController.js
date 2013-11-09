@@ -1,16 +1,17 @@
-var hScale, layoutSkills, vScale;
-
-vScale = 46;
-
-hScale = 10;
+var layoutSkills;
 
 layoutSkills = function(skills) {
-  var row, rowIndex, rows, skill, width, _i, _len;
+  var hScale, row, rowIndex, rows, skill, vScale, width, windowHeight, windowWidth, _i, _len, _results;
+  windowWidth = $(window).width();
+  windowHeight = $(window).height();
+  hScale = windowWidth / (12 * 4);
+  vScale = 36;
   rows = [
     {
       skills: []
     }
   ];
+  _results = [];
   for (_i = 0, _len = skills.length; _i < _len; _i++) {
     skill = skills[_i];
     rowIndex = _.findIndex(rows, function(row) {
@@ -20,10 +21,10 @@ layoutSkills = function(skills) {
         rowSkill = _ref[_j];
         skillEnd = skill.developmentalAge + skill.developmentalAgeRange;
         rowSkillEnd = rowSkill.developmentalAge + rowSkill.developmentalAgeRange;
-        skillStartWithinRowSkill = skill.developmentalAge >= rowSkill.developmentalAge && skill.developmentalAge <= rowSkillEnd;
-        skillEndWithinRowSkill = skillEnd >= rowSkill.developmentalAge && skillEnd <= rowSkillEnd;
-        rowSkillStartWithinSkill = rowSkill.developmentalAge >= skill.developmentalAge && rowSkill.developmentalAge <= skillEnd;
-        rowSkillEndWithinSkill = rowSkillEnd >= skill.developmentalAge && rowSkillEnd <= skillEnd;
+        skillStartWithinRowSkill = skill.developmentalAge >= rowSkill.developmentalAge && skill.developmentalAge < rowSkillEnd;
+        skillEndWithinRowSkill = skillEnd > rowSkill.developmentalAge && skillEnd < rowSkillEnd;
+        rowSkillStartWithinSkill = rowSkill.developmentalAge > skill.developmentalAge && rowSkill.developmentalAge < skillEnd;
+        rowSkillEndWithinSkill = rowSkillEnd > skill.developmentalAge && rowSkillEnd < skillEnd;
         if (skillStartWithinRowSkill || skillEndWithinRowSkill || rowSkillStartWithinSkill || rowSkillEndWithinSkill) {
           return false;
         }
@@ -41,33 +42,28 @@ layoutSkills = function(skills) {
     }
     row.skills.push(skill);
     width = skill.developmentalAgeRange * hScale;
-    skill.layout = {
+    _results.push(skill.layout = {
       width: width + 'px',
-      left: (skill.developmentalAge * hScale) + 'px',
+      left: ((skill.developmentalAge - 1) * hScale) + 'px',
       row: rowIndex,
       top: (rowIndex * vScale) + 'px'
-    };
+    });
   }
-  return skills;
+  return _results;
 };
 
-window.HomeCtrl = function($scope) {
-  var i, skills;
-  skills = (function() {
-    var _i, _results;
-    _results = [];
-    for (i = _i = 0; _i <= 100; i = ++_i) {
-      _results.push({
-        _id: "23",
-        title: "Eye hand movement",
-        description: "Eye–hand movements better coordinated; can put objects together, take them apart; fit large pegs into pegboard.",
-        developmentalAge: Math.floor(Math.random() * 128),
-        developmentalAgeRange: Math.floor(Math.random() * 20) + 6,
-        dependencies: [],
-        categories: ["cognitive"]
-      });
-    }
-    return _results;
-  })();
-  return $scope.skills = layoutSkills(skills);
+window.HomeCtrl = function($scope, $http) {
+  var reLayout;
+  reLayout = function() {
+    return layoutSkills($scope.skills);
+  };
+  $(window).on('resize', function() {
+    return $scope.$apply(reLayout);
+  });
+  return $http.get('/skills').success(function(skills) {
+    $scope.skills = skills;
+    return reLayout();
+  }).error(function(err) {
+    return alert("Error loading skills: " + err);
+  });
 };
