@@ -13,7 +13,9 @@
   "dependencies": {
     "nko": "*",
     "express": "~3.4.4",
-    "coffee-script": "~1.6.3"
+    "coffee-script": "~1.6.3",
+    "stylus": "~0.40.0",
+    "nib": "~1.0.1"
   },
   "engines": {
     "node": "0.10.x"
