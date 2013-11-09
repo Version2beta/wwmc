@@ -142,8 +142,16 @@ window.HomeCtrl = ($scope, $http, $modal) ->
     }
 
   $scope.showDependencies = (skill) ->
-    s.dependency = "dependency" for s in $scope.skills when s._id in (skill.dependencies or [])
+    skill.active = "active"
+    for s in $scope.skills
+      if s._id in (skill.dependencies or [])
+        s.dependency = "dependency"
+        $scope.showDependencies(s)
+      else
+        s.dependency = "hide-dependency" if not s.active
+        #s.dependency = "dependency" for s in $scope.skills when s._id in (skill.dependencies or [])
 
   $scope.hideDependencies = ->
     for s in $scope.skills
+      delete s.active
       delete s.dependency

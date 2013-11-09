@@ -26,18 +26,21 @@ timelineHeight = 50px
   text-overflow: ellipsis
   whitespace: nowrap
 
-  &:active, &:focus {
+  &:hover, &.active {
+    box-shadow: 0px 0px 40px white
     border-color: #7793A8
-  }
-
-  &:hover {
-    box-shadow: 0px 0px 20px #fff
     text-decoration: none
+    background: rgba(255, 255, 255, 0.9)
   }
-}
 
-.dependency {
-  box-shadow: 0 0 20px gold
+  &.dependency {
+    box-shadow: 0 0 20px white
+    background: rgba(255, 255, 255, 0.75)
+  }
+
+  &.hide-dependency {
+    background: rgba(255, 255, 255, 0.1)
+  }
 }
 
 
