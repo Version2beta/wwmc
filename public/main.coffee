@@ -11,6 +11,6 @@ angular.module('wwmc').directive 'scrollWithPage', ($document) ->
   (scope, el, attrs) ->
     jqDoc = $($document)
 
-    $document.on 'scroll', (e) ->
+    $document.on 'scroll touchmove', (e) ->
       el.css
         transform: "translateX(#{-jqDoc.scrollLeft()}px)"

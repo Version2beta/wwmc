@@ -1,18 +1,30 @@
-# on hover, expand
+categoryColors = [
+  "#DFEF8F"
+  "#8FEF95"
+  "#EFBA8F"
+  "#EF9A8F"
+  "#EF8FB5"
+]
 
 layoutSkills = ($scope, {hScale, vScale}) ->
 
-  skillHeight = 30
   $scope.skillsHeight = 0
   $scope.skillsWidth = 0
 
-  rows = [{
-    skills: []
-  }]
+  categories = []
 
   for skill in $scope.skills
+    category = _.find categories, (category) ->
+      category.name == skill.categories
+
+    if !category
+      category = { name: skill.categories, rows: [] }
+      categories.push category
+
+    rows = category.rows
+
     # find the first row this skill can fit in
-    rowIndex = _.findIndex rows, (row) ->
+    row = _.find rows, (row) ->
       for rowSkill in row.skills
         skillEnd = skill.developmentalAge + skill.developmentalAgeRange
         rowSkillEnd = rowSkill.developmentalAge + rowSkill.developmentalAgeRange
@@ -35,30 +47,38 @@ layoutSkills = ($scope, {hScale, vScale}) ->
       return true
 
     # add another row if we can't fit in any existing rows
-    if rowIndex == -1
-      row = {
-        skills: []
-      }
+    if !row
+      row = { skills: [] }
       rows.push row
-      rowIndex = rows.length - 1
-    else
-      row = rows[rowIndex]
 
     row.skills.push skill
 
+  rowIndex = 0
+  for category in categories
+    for row in category.rows
+      for skill in row.skills
+        width = skill.developmentalAgeRange * hScale
+        top = rowIndex * vScale
+        left = skill.developmentalAge * hScale
+        skill.layout = {
+          width: width + 'px'
+          left: left + 'px'
+          row: rowIndex
+          top: top + 'px'
+        }
 
-    width = skill.developmentalAgeRange * hScale
-    top = rowIndex * vScale
-    left = skill.developmentalAge * hScale
-    skill.layout = {
-      width: width + 'px'
-      left: left + 'px'
-      row: rowIndex
-      top: top + 'px'
+        $scope.skillsHeight = Math.max (top + vScale), $scope.skillsHeight
+        $scope.skillsWidth = Math.max (left + width), $scope.skillsWidth
+
+      rowIndex++
+
+  $scope.categories = categories.map (category, i) ->
+    {
+      name: category.name
+      height: category.rows.length * vScale
+      backgroundColor: categoryColors[i]
     }
 
-    $scope.skillsHeight = Math.max (top + skillHeight), $scope.skillsHeight
-    $scope.skillsWidth = Math.max (left + width), $scope.skillsWidth
 
 
 layoutTimeline = ($scope, {hScale, vScale, maxMonth}) ->
