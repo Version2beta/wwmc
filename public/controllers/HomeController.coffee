@@ -1,18 +1,16 @@
 # on hover, expand
 
-layoutSkills = (skills) ->
-  windowWidth = $(window).width()
-  windowHeight = $(window).height()
+layoutSkills = ($scope, {hScale, vScale}) ->
 
-  # width of screen is 4 years
-  hScale = windowWidth / (12 * 4)
-  vScale = 36
+  skillHeight = 30
+  $scope.skillsHeight = 0
+  $scope.skillsWidth = 0
 
   rows = [{
     skills: []
   }]
 
-  for skill in skills
+  for skill in $scope.skills
     # find the first row this skill can fit in
     rowIndex = _.findIndex rows, (row) ->
       for rowSkill in row.skills
@@ -50,21 +48,64 @@ layoutSkills = (skills) ->
 
 
     width = skill.developmentalAgeRange * hScale
+    top = rowIndex * vScale
+    left = skill.developmentalAge * hScale
     skill.layout = {
       width: width + 'px'
-      left: ((skill.developmentalAge - 1) * hScale) + 'px'
+      left: left + 'px'
       row: rowIndex
-      top: (rowIndex * vScale) + 'px'
+      top: top + 'px'
     }
 
+    $scope.skillsHeight = Math.max (top + skillHeight), $scope.skillsHeight
+    $scope.skillsWidth = Math.max (left + width), $scope.skillsWidth
 
+
+layoutTimeline = ($scope, {hScale, vScale, maxMonth}) ->
+  $scope.timelineNotches = for month in [0..maxMonth] by 3
+    {
+      month
+      left: hScale * month + 'px'
+    }
 
 window.HomeCtrl = ($scope, $http, $modal) ->
   reLayout = ->
-    layoutSkills $scope.skills
+    windowWidth = $(window).width()
+
+    # width of screen is 4 years
+    hScale = windowWidth / (12 * 4)
+    vScale = 36
+
+    $scope.vScale = vScale
+    $scope.hScale = hScale
+
+    layoutSkills $scope, {
+      hScale
+      vScale
+    }
+
+
+    maxSkill = _.max $scope.skills, (skill) ->
+      skill.developmentalAge + skill.developmentalAgeRange
+
+    maxMonth = maxSkill.developmentalAge + maxSkill.developmentalAgeRange
+    maxYear = Math.floor maxMonth / 12
+
+    $scope.years = [0..maxYear].map (year) ->
+      {
+        year
+        left: hScale * 12 * year + 'px'
+      }
+
+    layoutTimeline $scope, {
+      hScale
+      vScale
+      maxMonth
+    }
 
   $(window).on 'resize', ->
     $scope.$apply reLayout
+
 
   $http.get('/skills')
     .success (skills) ->
