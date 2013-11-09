@@ -10,7 +10,7 @@ timelineHeight = 50px
 
 .skill {
   absolute: top left
-  background: rgba(175, 222, 240, 0.6)
+  background: rgba(230, 236, 240, 0.6)
   border: 1px solid #87AFC7
   border-radius: 2px
   color: black
@@ -23,7 +23,17 @@ timelineHeight = 50px
   &:active, &:focus {
     border-color: #7793A8
   }
+
+  &:hover {
+    box-shadow: 0px 0px 20px #fff
+    text-decoration: none
+  }
 }
+
+.dependency {
+  box-shadow: 0 0 20px gold
+}
+
 
 .timeline {
   color: white
@@ -49,3 +59,4 @@ timelineHeight = 50px
 
   margin-left: -(@width / 2)
 }
+

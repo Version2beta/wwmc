@@ -122,3 +122,10 @@ window.HomeCtrl = ($scope, $http, $modal) ->
         data: -> return datas
       }
     }
+
+  $scope.showDependencies = (skill) ->
+    s.dependency = "dependency" for s in $scope.skills when s._id in (skill.dependencies or [])
+
+  $scope.hideDependencies = ->
+    for s in $scope.skills
+      delete s.dependency
