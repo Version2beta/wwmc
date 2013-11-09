@@ -13,6 +13,7 @@ window.HomeCtrl = ($scope, $modal) ->
   ]
 
   $scope.open = (datas) ->
+
     modalInstance = $modal.open {
       templateUrl: 'views/modal.html'
       controller: ModalCtrl
@@ -20,10 +21,3 @@ window.HomeCtrl = ($scope, $modal) ->
         data: -> return datas
       }
     }
-
-    modalInstance.result.then((item) ->
-      # TODO: update scope if it is edited or something?
-      console.log 'item is', item
-    , ->
-      console.log 'Modal dismissed at: ' + new Date()
-    )

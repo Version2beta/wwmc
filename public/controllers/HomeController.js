@@ -12,7 +12,7 @@ window.HomeCtrl = function($scope, $modal) {
   ];
   return $scope.open = function(datas) {
     var modalInstance;
-    modalInstance = $modal.open({
+    return modalInstance = $modal.open({
       templateUrl: 'views/modal.html',
       controller: ModalCtrl,
       resolve: {
@@ -20,11 +20,6 @@ window.HomeCtrl = function($scope, $modal) {
           return datas;
         }
       }
-    });
-    return modalInstance.result.then(function(item) {
-      return console.log('item is', item);
-    }, function() {
-      return console.log('Modal dismissed at: ' + new Date());
     });
   };
 };
