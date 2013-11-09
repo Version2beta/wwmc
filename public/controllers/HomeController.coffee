@@ -20,6 +20,7 @@ layoutSkills = ($scope, {hScale, vScale}) ->
     if !category
       category = { name: skill.categories, rows: [] }
       categories.push category
+    console.log categories
 
     rows = category.rows
 
@@ -78,6 +79,8 @@ layoutSkills = ($scope, {hScale, vScale}) ->
       height: category.rows.length * vScale
       backgroundColor: categoryColors[i]
     }
+
+    skill.id = skill._id
 
 
 
