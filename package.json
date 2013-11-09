@@ -4,7 +4,7 @@
   "description": "Wwmc",
   "main": "app.coffee",
   "scripts": {
-    "start": "coffee app.coffee"
+    "start": "./node_modules/.bin/coffee app.coffee"
   },
   "repository": {
     "type": "git",
