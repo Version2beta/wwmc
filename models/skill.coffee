@@ -1,12 +1,13 @@
 mongoose = require 'mongoose'
 
 Skill = mongoose.Schema {
-  name: String
+  skillId: Number
+  title: String
   description: String
-  expectedAgeStart: Number
-  expectedAgeRange: Number
+  developmentalAge: Number
+  developmentalAgeRange: Number
   category: String, enum: ['Cognitive', 'Physical'] # need more of these
-  pastSkillIds: [mongoose.Schema.ObjectId]
+  dependencies: [mongoose.Schema.ObjectId]
 }
 
 Skill.statics.findAll = (cb) ->
