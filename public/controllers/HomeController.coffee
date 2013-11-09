@@ -6,7 +6,7 @@ categoryColors = [
   "#EF8FB5"
 ]
 
-layoutSkills = ($scope, {hScale, vScale}) ->
+layoutSkills = ($scope, {hScale, vScale, vPadding, hPadding}) ->
 
   $scope.skillsHeight = 0
   $scope.skillsWidth = 0
@@ -58,8 +58,8 @@ layoutSkills = ($scope, {hScale, vScale}) ->
     for row in category.rows
       for skill in row.skills
         width = skill.developmentalAgeRange * hScale
-        top = rowIndex * vScale
-        left = skill.developmentalAge * hScale
+        top = rowIndex * vScale + vPadding
+        left = skill.developmentalAge * hScale + hPadding
         skill.layout = {
           width: width + 'px'
           left: left + 'px'
@@ -67,8 +67,8 @@ layoutSkills = ($scope, {hScale, vScale}) ->
           top: top + 'px'
         }
 
-        $scope.skillsHeight = Math.max (top + vScale), $scope.skillsHeight
-        $scope.skillsWidth = Math.max (left + width), $scope.skillsWidth
+        $scope.skillsHeight = Math.max (top + vScale - vPadding), $scope.skillsHeight
+        $scope.skillsWidth = Math.max (left + width + hPadding), $scope.skillsWidth
 
       rowIndex++
 
@@ -79,11 +79,11 @@ layoutSkills = ($scope, {hScale, vScale}) ->
       backgroundColor: categoryColors[i]
     }
 
-layoutTimeline = ($scope, {hScale, vScale, maxMonth}) ->
+layoutTimeline = ($scope, {hScale, vScale, maxMonth, vPadding, hPadding}) ->
   $scope.timelineNotches = for month in [0..maxMonth] by 3
     {
       month
-      left: hScale * month + 'px'
+      left: (hScale * month + hPadding) + 'px'
     }
 
 window.HomeCtrl = ($scope, $http, $modal) ->
@@ -93,6 +93,8 @@ window.HomeCtrl = ($scope, $http, $modal) ->
     # width of screen is 4 years
     hScale = windowWidth / (12 * 4)
     vScale = 36
+    vPadding = 16
+    hPadding = 16
 
     $scope.vScale = vScale
     $scope.hScale = hScale
@@ -100,6 +102,8 @@ window.HomeCtrl = ($scope, $http, $modal) ->
     layoutSkills $scope, {
       hScale
       vScale
+      vPadding
+      hPadding
     }
 
 
@@ -112,12 +116,14 @@ window.HomeCtrl = ($scope, $http, $modal) ->
     $scope.years = [0..maxYear].map (year) ->
       {
         year
-        left: hScale * 12 * year + 'px'
+        left: (hScale * 12 * year + hPadding) + 'px'
       }
 
     layoutTimeline $scope, {
       hScale
       vScale
+      vPadding
+      hPadding
       maxMonth
     }
 
