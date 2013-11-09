@@ -3,7 +3,7 @@ stylus = require 'stylus'
 nib = require 'nib'
 coffeescript = require 'connect-coffee-script'
 
-milestone = require './controllers/milestone'
+skill = require './controllers/skill'
 config = require './config'
 
 isProduction = process.env.NODE_ENV == 'production'
@@ -26,8 +26,8 @@ app.use stylus.middleware
 
 app.use express.static "#{__dirname}/public"
 
-app.get '/milestones', milestone.getMilestones
-app.get '/milestones/:ids', milestone.getMilestonesById # comma-separated list of ids
+app.get '/skills', skill.getSkills
+app.get '/skills/:ids', skill.getSkillsById # comma-separated list of ids
 
 app.listen config.PORT, (err) ->
   if err
