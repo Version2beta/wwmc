@@ -1,19 +1,16 @@
 <!doctype html>
 <html ng-app="wwmc">
 <head>
-  <link rel="stylesheet" href="/css/bootstrap.css">
   <link rel="stylesheet" href="/css/main.css">
   <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <section ng-view class="wwmcMain"></section>
+  <section ui-view class="wwmcMain"></section>
 
   <script src="lib/jquery.js"></script>
   <script src="lib/lodash.js"></script>
   <script src="lib/angular.js"></script>
-  <script src="lib/angular-route.js"></script>
-  <script src="lib/ui-modal.js"></script>
-  <script src="lib/ui-modal-tpls.js"></script>
+  <script src="lib/angular-ui-router.js"></script>
   <script src="controllers/HomeController.js"></script>
   <script src="controllers/ModalController.js"></script>
   <script src="main.js"></script>

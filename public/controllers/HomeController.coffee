@@ -1,5 +1,12 @@
-# on hover, expand
+fixupSkills = (skills) ->
+  if !Array.isArray skills
+    return skills.id = skills._id
+  skills.forEach (s) ->
+    s.id = s._id
+  skills
 
+
+# on hover, expand
 layoutSkills = (skills) ->
   windowWidth = $(window).width()
   windowHeight = $(window).height()
@@ -48,7 +55,6 @@ layoutSkills = (skills) ->
 
     row.skills.push skill
 
-
     width = skill.developmentalAgeRange * hScale
     skill.layout = {
       width: width + 'px'
@@ -57,34 +63,25 @@ layoutSkills = (skills) ->
       top: (rowIndex * vScale) + 'px'
     }
 
-
-
-window.HomeCtrl = ($scope, $http, $modal) ->
+window.HomeCtrl = ($scope, $http) ->
   reLayout = ->
+    return if !$scope.skills
     layoutSkills $scope.skills
+  reLayout()
+
+  console.log 'getting all skills'
+  $http.get('/skills').then (data) ->
+    console.log 'fixing up skills'
+    $scope.skills = fixupSkills data.data
+    reLayout()
 
   $(window).on 'resize', ->
     $scope.$apply reLayout
-
-  $http.get('/skills')
-    .success (skills) ->
-      $scope.skills = skills
-      reLayout()
-    .error (err) ->
-      alert "Error loading skills: #{err}"
-
-  $scope.open = (datas) ->
-    $modal.open {
-      templateUrl: 'views/modal.html'
-      controller: ModalCtrl
-      resolve: {
-        data: -> return datas
-      }
-    }
 
   $scope.showDependencies = (skill) ->
     s.dependency = "dependency" for s in $scope.skills when s._id in (skill.dependencies or [])
 
   $scope.hideDependencies = ->
+    return if !$scope.skills
     for s in $scope.skills
       delete s.dependency

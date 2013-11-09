@@ -1,3 +1,7 @@
 <section ng-controller="HomeCtrl" class="home">
-<a href="#" ng-repeat="skill in skills" class="skill {{skill.dependency}}" ng-class="{{skill.dependencies}}" ng-click="open(skill)" ng-mouseenter="showDependencies(skill)" ng-mouseleave="hideDependencies()" ng-style="skill.layout" title="{{skill.title}}">{{skill.title}}</a>
+  <a href="/skills/{{skill.id}}" ng-repeat="skill in skills" class="skill {{skill.dependency}}"
+  ng-class="{{skill.dependencies}}" ng-mouseenter="showDependencies(skill)"
+  ng-mouseleave="hideDependencies()" ng-style="skill.layout"
+  title="{{skill.title}}">{{skill.title}}</a>
+<section ui-view></section>
 </section>
