@@ -127,14 +127,14 @@ audio:not([controls]),
 }
 html,
 body {
-  background: #e6ecf0;
+  background: #afdef0;
   font-family: Noto Sans, sans-serif;
 }
 .skill {
   position: absolute;
   top: 0;
   left: 0;
-  background: #afdef0;
+  background: #e6ecf0;
   border: 1px solid #87afc7;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -149,6 +149,15 @@ body {
 .skill:active,
 .skill:focus {
   border-color: #7793a8;
+}
+.skill:hover {
+  -webkit-box-shadow: 0px 0px 20px #fff;
+  box-shadow: 0px 0px 20px #fff;
+  text-decoration: none;
+}
+.dependency {
+  -webkit-box-shadow: 0 0 20px #ffd700;
+  box-shadow: 0 0 20px #ffd700;
 }
 .modal {
   padding: 20px;
