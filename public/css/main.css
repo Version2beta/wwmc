@@ -139,8 +139,12 @@ body {
   -webkit-border-radius: 6px;
   border-radius: 6px;
   color: #000;
+  overflow: hidden;
   padding: 6px;
   text-decoration: none;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .skill:active,
 .skill:focus {

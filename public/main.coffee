@@ -1,5 +1,4 @@
 
-
 angular.module('wwmc', ['ngRoute']).config ['$routeProvider', '$locationProvider', ($routeProvider, $locationProvider) ->
   $routeProvider.when '/',
     templateUrl: 'views/home.html'
