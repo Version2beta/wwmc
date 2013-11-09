@@ -57,6 +57,8 @@ layoutSkills = (skills) ->
       top: (rowIndex * vScale) + 'px'
     }
 
+    skill.id = skill._id
+
 
 
 window.HomeCtrl = ($scope, $http, $modal) ->
