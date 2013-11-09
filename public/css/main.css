@@ -150,3 +150,17 @@ body {
 .skill:focus {
   border-color: #7793a8;
 }
+.modal {
+  padding: 20px;
+}
+.modal h2 {
+  font-size: 22px;
+}
+.modal p {
+  padding: 5px;
+}
+.modal-backdrop {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}

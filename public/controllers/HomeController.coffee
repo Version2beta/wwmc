@@ -1,4 +1,3 @@
-
 # on hover, expand
 
 layoutSkills = (skills) ->
@@ -60,7 +59,7 @@ layoutSkills = (skills) ->
 
 
 
-window.HomeCtrl = ($scope, $http) ->
+window.HomeCtrl = ($scope, $http, $modal) ->
   reLayout = ->
     layoutSkills $scope.skills
 
@@ -74,3 +73,11 @@ window.HomeCtrl = ($scope, $http) ->
     .error (err) ->
       alert "Error loading skills: #{err}"
 
+  $scope.open = (datas) ->
+    $modal.open {
+      templateUrl: 'views/modal.html'
+      controller: ModalCtrl
+      resolve: {
+        data: -> return datas
+      }
+    }
