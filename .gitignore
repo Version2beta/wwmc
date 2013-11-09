@@ -1,1 +1,3 @@
 node_modules/
+public/controllers/**.js
+public/main.js
