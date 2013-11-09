@@ -6,7 +6,7 @@ categoryColors = [
   "#EF8FB5"
 ]
 
-layoutSkills = ($scope, {hScale, vScale, vPadding, hPadding}) ->
+layoutSkills = ($scope, {hScale, vScale, topPadding, hPadding}) ->
 
   $scope.skillsHeight = 0
   $scope.skillsWidth = 0
@@ -58,7 +58,7 @@ layoutSkills = ($scope, {hScale, vScale, vPadding, hPadding}) ->
     for row in category.rows
       for skill in row.skills
         width = skill.developmentalAgeRange * hScale
-        top = rowIndex * vScale + vPadding
+        top = rowIndex * vScale + topPadding
         left = skill.developmentalAge * hScale + hPadding
         skill.layout = {
           width: width + 'px'
@@ -67,7 +67,7 @@ layoutSkills = ($scope, {hScale, vScale, vPadding, hPadding}) ->
           top: top + 'px'
         }
 
-        $scope.skillsHeight = Math.max (top + vScale - vPadding), $scope.skillsHeight
+        $scope.skillsHeight = Math.max (top + vScale - topPadding), $scope.skillsHeight
         $scope.skillsWidth = Math.max (left + width + hPadding), $scope.skillsWidth
 
       rowIndex++
@@ -79,7 +79,7 @@ layoutSkills = ($scope, {hScale, vScale, vPadding, hPadding}) ->
       backgroundColor: categoryColors[i]
     }
 
-layoutTimeline = ($scope, {hScale, vScale, maxMonth, vPadding, hPadding}) ->
+layoutTimeline = ($scope, {hScale, vScale, maxMonth, topPadding, hPadding}) ->
   $scope.timelineNotches = for month in [0..maxMonth] by 3
     {
       month
@@ -93,7 +93,7 @@ window.HomeCtrl = ($scope, $http, $modal) ->
     # width of screen is 4 years
     hScale = windowWidth / (12 * 4)
     vScale = 36
-    vPadding = 16
+    topPadding = 40
     hPadding = 16
 
     $scope.vScale = vScale
@@ -102,7 +102,7 @@ window.HomeCtrl = ($scope, $http, $modal) ->
     layoutSkills $scope, {
       hScale
       vScale
-      vPadding
+      topPadding
       hPadding
     }
 
@@ -122,7 +122,7 @@ window.HomeCtrl = ($scope, $http, $modal) ->
     layoutTimeline $scope, {
       hScale
       vScale
-      vPadding
+      topPadding
       hPadding
       maxMonth
     }
