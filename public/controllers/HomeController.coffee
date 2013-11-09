@@ -79,10 +79,6 @@ layoutSkills = ($scope, {hScale, vScale}) ->
       backgroundColor: categoryColors[i]
     }
 
-    skill.id = skill._id
-
-
-
 layoutTimeline = ($scope, {hScale, vScale, maxMonth}) ->
   $scope.timelineNotches = for month in [0..maxMonth] by 3
     {
