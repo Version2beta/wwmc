@@ -4,19 +4,26 @@ require('nko')('cgtyi6pwUp5CEM0E')
 express = require 'express'
 stylus = require 'stylus'
 nib = require 'nib'
+coffeescript = require 'connect-coffee-script'
 
 isProduction = process.env.NODE_ENV == 'production'
 port = if isProduction then 80 else 8000
 
 app = express()
-app.use stylus.middleware({
+
+app.use coffeescript
+  src: "#{__dirname}/public"
+  bare: true
+
+app.use stylus.middleware
   src: "#{__dirname}/public"
   compile: (str, path) ->
     stylus(str)
       .include("#{__dirname}/public")
       .use(nib())
       .set('filename', path)
-})
+
+
 app.use express.static "#{__dirname}/public"
 
 
