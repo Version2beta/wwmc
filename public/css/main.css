@@ -151,8 +151,13 @@ body {
   border-color: #7793a8;
 }
 .skill:hover {
-  text-decoration: none;
+  -webkit-box-shadow: 0px 0px 20px #fff;
   box-shadow: 0px 0px 20px #fff;
+  text-decoration: none;
+}
+.dependency {
+  -webkit-box-shadow: 0 0 20px #ffd700;
+  box-shadow: 0 0 20px #ffd700;
 }
 .modal {
   padding: 20px;
