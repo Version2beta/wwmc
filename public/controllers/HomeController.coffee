@@ -1,5 +1,4 @@
-
-window.HomeCtrl = ($scope) ->
+window.HomeCtrl = ($scope, $modal) ->
   $scope.skills = [
     {
       _id: "23",
@@ -9,8 +8,22 @@ window.HomeCtrl = ($scope) ->
       developmentalAgeRange: 12,
       dependencies: [
       ],
-      categories: [
-        "cognitive"
-      ]
+      category: "cognitive"
     }
   ]
+
+  $scope.open = (datas) ->
+    modalInstance = $modal.open {
+      templateUrl: 'views/modal.html'
+      controller: ModalCtrl
+      resolve: {
+        data: -> return datas
+      }
+    }
+
+    modalInstance.result.then((item) ->
+      # TODO: update scope if it is edited or something?
+      console.log 'item is', item
+    , ->
+      console.log 'Modal dismissed at: ' + new Date()
+    )

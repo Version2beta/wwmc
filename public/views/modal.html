@@ -1,0 +1,8 @@
+<div class="modal">
+  <h3>{{data.title}}</h3>
+  <p>{{data.description}}</p>
+  <p>From {{data.developmentalAge}} months to {{data.developmentalAgeRange + data.developmentalAge}} months</p>
+  <span class="category">{{category}}</p>
+  <button class="btn btn-primary" ng-click="ok(data)">OK</button>
+  <button class="btn btn-warning" ng-click="cancel(data)">Cancel</button>
+</div>
