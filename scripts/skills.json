@@ -1,91 +1,91 @@
 [
   {
     "skillId":1,
-    "title":"Rooting and sucking",
-    "description":"Rooting and sucking reflexes are well developed.",
-    "developmentalAge":1,
+    "title":"Rooting and sucking reflexes are well developed",
+    "description":"The baby's mouth will instinctively suckle when stroking cheek or palm.",
+    "developmentalAge":0,
     "developmentalAgeRange":3,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":2,
-    "title":"Swallowing",
+    "title":"Immature Tongue Movements",
     "description":"Swallowing reflex and tongue movements are immature; inability to move food to the back of the mouth.",
-    "developmentalAge":1,
+    "developmentalAge":0,
     "developmentalAgeRange":3,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":3,
-    "title":"Grasping",
+    "title":"Fingers reflexively close",
     "description":"The baby's fingers will reflexively close around objects placed in their hand",
-    "developmentalAge":1,
+    "developmentalAge":0,
     "developmentalAgeRange":3,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":4,
-    "title":"Landau Reflex Appears",
+    "title":"Landau Reflex",
     "description":"When baby is held in a prone (face down) position, the head is held upright and legs are fully extended.",
-    "developmentalAge":1,
+    "developmentalAge":0,
     "developmentalAgeRange":3,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":5,
-    "title":"Grasping",
+    "title":"Grasps with entire hand",
     "description":"Grasps with entire hand; strength insufficient to hold items. Holds hands in an open or semi-open position.",
-    "developmentalAge":1,
+    "developmentalAge":0,
     "developmentalAgeRange":3,
     "dependencies":"3",
     "categories":"Motor"
   },
   {
     "skillId":6,
-    "title":"Movements Large and Jerky",
+    "title":"Larger & Jerky movements",
     "description":"Movements are large and jerky.",
-    "developmentalAge":1,
+    "developmentalAge":0,
     "developmentalAgeRange":3,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":7,
-    "title":"Raises Head and Upper Body on Arms",
+    "title":"Raises head and upper body when face down",
     "description":"Raises head and upper body on arms when in a prone position.",
-    "developmentalAge":1,
+    "developmentalAge":0,
     "developmentalAgeRange":3,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":8,
-    "title":"Turns head side to side while Laying",
+    "title":"Turns head side to side when face up",
     "description":"Turns head side to side when in a supine (face up) position;can not hold head up and line with the body.",
-    "developmentalAge":1,
+    "developmentalAge":0,
     "developmentalAgeRange":3,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":9,
-    "title":"More Active Upper Body",
+    "title":"Upper body more active",
     "description":"Upper body parts are more active: clasps hands above face, waves arms about, reaches for objects.",
-    "developmentalAge":1,
+    "developmentalAge":0,
     "developmentalAgeRange":3,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":10,
-    "title":"Blinking",
-    "description":"Blinking reflex is well established",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "title":"Blinking reflex is well established",
+    "description":"Baby will blink if an object comes close to their eyes",
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
@@ -93,17 +93,17 @@
     "skillId":11,
     "title":"Sucking Reflex",
     "description":"Sucking reflex becomes voluntary",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"1",
     "categories":"Motor"
   },
   {
     "skillId":12,
     "title":"Moro Reflex",
-    "description":"Moro reflex disappears",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "description":"Reacts when startled by strecthing out arms and flexing legs",
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
@@ -111,35 +111,35 @@
     "skillId":13,
     "title":"Protective Reflex",
     "description":"When lowered suddenly, infant throws out arms as a protective measure.",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":14,
-    "title":"Moves solid foods from front of mouth to back",
+    "title":"Swallowing Reflex",
     "description":"Swallowing reflex appears and allows infant to move solid foods from front of mouth to the back for swallowing.",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"2",
     "categories":"Motor"
   },
   {
     "skillId":15,
-    "title":"Gripping",
+    "title":"Pincer Grip",
     "description":"Picks up objects using finger and thumb (pincer grip).",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"5",
     "categories":"Motor"
   },
   {
     "skillId":16,
-    "title":"Reaches with arms simultaneously",
+    "title":"Reaches with both arms",
     "description":"Reaches for objects with both arms simultaneously",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
@@ -147,53 +147,53 @@
     "skillId":17,
     "title":"Reaches with one hand",
     "description":"Reaches for objects with one hand or the other",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"16",
     "categories":"Motor"
   },
   {
     "skillId":18,
-    "title":"Grasping",
+    "title":"Palmar Grasp",
     "description":"Transfers objects from one hand to the other; grasps object using entire hand (palmar grasp).",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
-    "dependencies":"15",
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
+    "dependencies":"15,5",
     "categories":"Motor"
   },
   {
     "skillId":19,
     "title":"Handles Objects and Puts Everything in Mouth",
     "description":"Handles, shakes, and pounds objects; puts everything in mouth.",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"15",
     "categories":"Motor"
   },
   {
     "skillId":20,
-    "title":"Eating",
+    "title":"Holds Bottle",
     "description":"Able to hold bottle.",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"19",
     "categories":"Motor"
   },
   {
     "skillId":21,
-    "title":"Sitting",
+    "title":"Sits without support",
     "description":"Sits alone without support, holding head erect, back straightened, and arms propped forward for support",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":22,
-    "title":"Crawling",
+    "title":"Pulls self into crawling position",
     "description":"Pulls self into a crawling position by raising up on arms and drawing knees up beneath the body; rocks back and forth, but generally does not move forward.",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
@@ -201,26 +201,26 @@
     "skillId":23,
     "title":"Lifts head when on back",
     "description":"Lifts head when placed on back.",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":24,
-    "title":"Rolls Over from back to stomach",
+    "title":"Rolls over",
     "description":"Can roll over from back or stomach position.",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":25,
-    "title":"Crawling",
+    "title":"Scoots backwards",
     "description":"May accidentally begin scooting backwards when placed on stomach; soon will begin to crawl forward.",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
@@ -228,8 +228,8 @@
     "skillId":26,
     "title":"Looks for fallen objects",
     "description":"Looks for fallen objects by 7 months",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "developmentalAge":6,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
@@ -237,8 +237,8 @@
     "skillId":27,
     "title":"Plays \"Peek-a-Boo\"",
     "description":"Plays ‘peek-a-boo’ games",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
@@ -246,17 +246,17 @@
     "skillId":28,
     "title":"Cognitive?",
     "description":"Cannot understand “no” or “danger”",
-    "developmentalAge":4,
-    "developmentalAgeRange":4,
+    "developmentalAge":3,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":29,
-    "title":"Reaches at an offered object",
+    "title":"Reaches towards offered object",
     "description":"Reaches with one hand leading to grasp an offered object or toy.",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
     "dependencies":"17",
     "categories":"Motor"
   },
@@ -264,8 +264,8 @@
     "skillId":30,
     "title":"Transfers objects from one hand to another",
     "description":"Manipulates objects, transferring them from one hand to the other.",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
     "dependencies":"18",
     "categories":"Motor"
   },
@@ -273,257 +273,275 @@
     "skillId":31,
     "title":"Pokes new objects with finger",
     "description":"Explores new objects by poking with one finger.",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":32,
-    "title":"Gripping",
+    "title":"Deliberate Pincer Grasp",
     "description":"Uses deliberate pincer grasp to pick up small objects, toys, and finger foods.",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
     "dependencies":"19",
     "categories":"Motor"
   },
   {
     "skillId":33,
-    "title":"Stacking",
+    "title":"Stacks objects",
     "description":"Stacks objects; also places objects inside one another.",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":34,
-    "title":"Throwing",
+    "title":"Drops or throws objects",
     "description":"Releases objects or toys by dropping or throwing; cannot intentionally put an object down.",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":35,
-    "title":"Standing",
+    "title":"Pulls self to standing position",
     "description":"Beginning to pull self to a standing position.",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":36,
-    "title":"Standing",
-    "description":"Beginning to stand alone, leaning on furniture for support; moves around obstacles by side-stepping.",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
+    "title":"Begins to stand alone",
+    "description":"Beginning to stand alone, leaning on furniture for support",
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
     "dependencies":"35",
     "categories":"Motor"
   },
   {
     "skillId":37,
-    "title":"Sitting",
-    "description":"Has good balance when sitting; can shift positions without falling.",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
-    "dependencies":"",
+    "title":"Sidesteps while supported standing",
+    "description":"Moves around obstacles by side-stepping.",
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
+    "dependencies":"36",
     "categories":"Motor"
   },
   {
     "skillId":38,
-    "title":"Crawling",
-    "description":"Creeps on hands and knees; crawls up and down stairs.",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
+    "title":"Balanced sitting",
+    "description":"Has good balance when sitting; can shift positions without falling.",
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":39,
-    "title":"Walking",
-    "description":"Walks with adult support, holding onto adult's hand; may begin to walk alone.",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
+    "title":"Creeps",
+    "description":"Creeps on hands and knees",
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":40,
-    "title":"Observes activities in immediate environment",
-    "description":"Watches people, objects, and activities in the immediate environment.",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
-    "dependencies":"",
+    "title":"Crawls up and down stairs",
+    "description":"Crawls up and down stairs.",
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
+    "dependencies":"39",
     "categories":"Motor"
   },
   {
     "skillId":41,
-    "title":"Responds to hearing tests",
-    "description":"Responds to hearing tests (voice localization); however, loses interest quickly and, therefore, may be difficult to test formally.",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
+    "title":"Walks with adult support",
+    "description":"Walks with adult support, holding onto adult's hand; may begin to walk alone.",
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":42,
-    "title":"Follows simple instructions",
-    "description":"Follows simple instructions.",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
+    "title":"Watches immediate environment",
+    "description":"Watches people, objects, and activities in the immediate environment.",
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":43,
-    "title":"Reaches visible, out of reach objects",
-    "description":"Reaches for toys that are out of reach but visible",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
+    "title":"Responds to hearing tests",
+    "description":"Responds to hearing tests (voice localization); however, loses interest quickly and, therefore, may be difficult to test formally.",
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":44,
-    "title":"Recognizes objects in reverse",
-    "description":"Recognizes objects in reverse",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
+    "title":"Cognitive?",
+    "description":"Follows simple instructions.",
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":45,
-    "title":"Throwing",
-    "description":"Drops thing intentionally and repeats and watches object",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
-    "dependencies":"34,26",
+    "title":"Reaches for visible items out of reach",
+    "description":"Reaches for toys that are out of reach but visible",
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
+    "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":46,
-    "title":"Imitates activities",
-    "description":"Imitates activities like playing drum",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
+    "title":"Recognizes objects in reverse",
+    "description":"Recognizes objects in reverse",
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":47,
-    "title":"Speaking",
-    "description":"Begins to develop expressive rather than receptive language- child actually responding to what is said to him instead of only receiving and watching the interaction.",
-    "developmentalAge":8,
-    "developmentalAgeRange":4,
-    "dependencies":"",
+    "title":"Intentionally drops objects",
+    "description":"Drops thing intentionally and repeats and watches object",
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
+    "dependencies":"34,26",
     "categories":"Motor"
   },
   {
     "skillId":48,
-    "title":"Crawling",
-    "description":"Crawls skillfully and quickly.",
-    "developmentalAge":12,
-    "developmentalAgeRange":12,
-    "dependencies":"38",
+    "title":"Imitates activities",
+    "description":"Imitates activities like playing drum",
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
+    "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":49,
-    "title":"Standing",
-    "description":"Stands alone with feet spread apart, legs stiffened, and arms extended for support.",
+    "title":"Begins to use expressive language",
+    "description":"Begins to develop expressive rather than receptive language- child actually responding to what is said to him instead of only receiving and watching the interaction.",
+    "developmentalAge":9,
+    "developmentalAgeRange":6,
+    "dependencies":"",
+    "categories":"Motor"
+  },
+  {
+    "skillId":50,
+    "title":"Skillful crawling",
+    "description":"Crawls skillfully and quickly.",
     "developmentalAge":12,
     "developmentalAgeRange":12,
     "dependencies":"39",
     "categories":"Motor"
   },
   {
-    "skillId":50,
-    "title":"Standing",
-    "description":"Gets to feet unaided.",
-    "developmentalAge":12,
-    "developmentalAgeRange":12,
-    "dependencies":"49",
-    "categories":"Motor"
-  },
-  {
     "skillId":51,
-    "title":"Walking",
-    "description":"Most children walk unassisted near the end of this period; falls often; not always able to maneuver around obstacles, such as furniture or toys.",
+    "title":"Stands alone",
+    "description":"Stands alone with feet spread apart, legs stiffened, and arms extended for support.",
     "developmentalAge":12,
     "developmentalAgeRange":12,
-    "dependencies":"49,39",
+    "dependencies":"41",
     "categories":"Motor"
   },
   {
     "skillId":52,
-    "title":"Standing",
-    "description":"Uses furniture to lower self to floor; collapses backwards into a sitting position or falls forward on hands and then sits.",
+    "title":"Gets to feet unaided",
+    "description":"Gets to feet unaided.",
     "developmentalAge":12,
     "developmentalAgeRange":12,
-    "dependencies":"49",
+    "dependencies":"51",
     "categories":"Motor"
   },
   {
     "skillId":53,
-    "title":"Walking",
-    "description":"Enjoys pushing or pulling toys while walking.",
+    "title":"Walks unassisted",
+    "description":"Most children walk unassisted near the end of this period; falls often; not always able to maneuver around obstacles, such as furniture or toys.",
     "developmentalAge":12,
     "developmentalAgeRange":12,
-    "dependencies":"51,33",
+    "dependencies":"51,41",
     "categories":"Motor"
   },
   {
     "skillId":54,
-    "title":"Throwing",
-    "description":"Repeatedly picks up objects and throws them; direction becomes more deliberate.",
+    "title":"Lowers self to floor",
+    "description":"Uses furniture to lower self to floor; collapses backwards into a sitting position or falls forward on hands and then sits.",
     "developmentalAge":12,
     "developmentalAgeRange":12,
-    "dependencies":"45",
+    "dependencies":"51",
     "categories":"Motor"
   },
   {
     "skillId":55,
-    "title":"Running",
-    "description":"Attempts to run; has difficulty stopping and usually just drops to the floor.",
+    "title":"Pushes or Pulls toys while walking",
+    "description":"Enjoys pushing or pulling toys while walking.",
     "developmentalAge":12,
     "developmentalAgeRange":12,
-    "dependencies":"52",
+    "dependencies":"53,33",
     "categories":"Motor"
   },
   {
     "skillId":56,
-    "title":"Climbing",
-    "description":"Crawls up stairs on all fours; goes down stairs in same position.",
+    "title":"Throws objects with more deliberate aim",
+    "description":"Repeatedly picks up objects and throws them; direction becomes more deliberate.",
     "developmentalAge":12,
     "developmentalAgeRange":12,
-    "dependencies":"38",
+    "dependencies":"47",
     "categories":"Motor"
   },
   {
     "skillId":57,
-    "title":"Sitting",
-    "description":"Sits in a small chair.",
+    "title":"Runs, but has difficulty stopping",
+    "description":"Attempts to run; has difficulty stopping and usually just drops to the floor.",
     "developmentalAge":12,
     "developmentalAgeRange":12,
-    "dependencies":"52",
+    "dependencies":"54",
     "categories":"Motor"
   },
   {
     "skillId":58,
-    "title":"Carrying",
-    "description":"Carries toys from place to place.",
+    "title":"Crawls up stairs on all fours",
+    "description":"Crawls up stairs on all fours; goes down stairs in same position.",
     "developmentalAge":12,
     "developmentalAgeRange":12,
-    "dependencies":"51,33",
+    "dependencies":"40",
     "categories":"Motor"
   },
   {
     "skillId":59,
-    "title":"Drawing",
+    "title":"Sits in small chair",
+    "description":"Sits in a small chair.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"54",
+    "categories":"Motor"
+  },
+  {
+    "skillId":60,
+    "title":"Carries toys",
+    "description":"Carries toys from place to place.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"53,33",
+    "categories":"Motor"
+  },
+  {
+    "skillId":61,
+    "title":"Scribbles with whole arm",
     "description":"Enjoys crayons and markers for scribbling; uses whole-arm movement.",
     "developmentalAge":12,
     "developmentalAgeRange":12,
@@ -531,8 +549,8 @@
     "categories":"Motor"
   },
   {
-    "skillId":60,
-    "title":"Eating",
+    "skillId":62,
+    "title":"Helps feed self",
     "description":"Helps feed self; enjoys holding spoon (often upside down) and drinking from a glass or cup; not always accurate in getting utensils into mouth; frequent spills should be expected.",
     "developmentalAge":12,
     "developmentalAgeRange":12,
@@ -540,17 +558,17 @@
     "categories":"Motor"
   },
   {
-    "skillId":61,
+    "skillId":63,
     "title":"Helps turn pages in book",
     "description":"Helps turn pages in book.",
     "developmentalAge":12,
     "developmentalAgeRange":12,
-    "dependencies":"59",
+    "dependencies":"61",
     "categories":"Motor"
   },
   {
-    "skillId":62,
-    "title":"Stacking",
+    "skillId":64,
+    "title":"Stacks two to six objects",
     "description":"Stacks two to six objects per day.",
     "developmentalAge":12,
     "developmentalAgeRange":12,
@@ -558,54 +576,36 @@
     "categories":"Motor"
   },
   {
-    "skillId":63,
-    "title":"Walking",
+    "skillId":65,
+    "title":"Walks around obstacles",
     "description":"Can walk around obstacles and walk more erect",
     "developmentalAge":24,
     "developmentalAgeRange":12,
-    "dependencies":"55",
-    "categories":"Motor"
-  },
-  {
-    "skillId":64,
-    "title":"Squats while playing",
-    "description":"Squats for long periods while playing.",
-    "developmentalAge":24,
-    "developmentalAgeRange":12,
     "dependencies":"57",
-    "categories":"Motor"
-  },
-  {
-    "skillId":65,
-    "title":"Climbing",
-    "description":"Climbs stairs unassisted (but not with alternating feet).",
-    "developmentalAge":24,
-    "developmentalAgeRange":12,
-    "dependencies":"56,51",
     "categories":"Motor"
   },
   {
     "skillId":66,
-    "title":"Jumping",
-    "description":"Balances on one foot (for a few moments), jumps up and down, but may fall.",
+    "title":"Squats while playing",
+    "description":"Squats for long periods while playing.",
     "developmentalAge":24,
     "developmentalAgeRange":12,
-    "dependencies":"64",
+    "dependencies":"59",
     "categories":"Motor"
   },
   {
     "skillId":67,
-    "title":"Potty Training",
-    "description":"Often achieves toilet training during this year (depending on child's physical and neurological development) although accidents should still be expected; the child will indicate readiness for toilet training.",
+    "title":"Climbs stairs without alternating feet",
+    "description":"Climbs stairs unassisted (but not with alternating feet).",
     "developmentalAge":24,
     "developmentalAgeRange":12,
-    "dependencies":"57",
+    "dependencies":"58,53",
     "categories":"Motor"
   },
   {
     "skillId":68,
-    "title":"Throwing",
-    "description":"Throws large ball underhand without losing balance. Holds small cup or tumbler in one hand. Unbuttons large buttons; unzips large zippers.",
+    "title":"Balances on one foot",
+    "description":"Balances on one foot (for a few moments), jumps up and down, but may fall.",
     "developmentalAge":24,
     "developmentalAgeRange":12,
     "dependencies":"66",
@@ -613,143 +613,143 @@
   },
   {
     "skillId":69,
-    "title":"Opens doors with doorknobs",
-    "description":"Opens doors by turning doorknobs.",
-    "developmentalAge":24,
-    "developmentalAgeRange":12,
-    "dependencies":"63",
-    "categories":"Motor"
-  },
-  {
-    "skillId":70,
-    "title":"Drawing",
-    "description":"Grasps large crayon with fist; scribbles.",
+    "title":"Potty Training",
+    "description":"Often achieves toilet training during this year (depending on child's physical and neurological development) although accidents should still be expected; the child will indicate readiness for toilet training.",
     "developmentalAge":24,
     "developmentalAgeRange":12,
     "dependencies":"59",
     "categories":"Motor"
   },
   {
-    "skillId":71,
-    "title":"Sitting",
-    "description":"Climbs up on chair, turns, and sits down.",
+    "skillId":70,
+    "title":"Throws large objects underhand",
+    "description":"Throws large ball underhand without losing balance.  ",
     "developmentalAge":24,
     "developmentalAgeRange":12,
-    "dependencies":"57,56",
+    "dependencies":"68",
+    "categories":"Motor"
+  },
+  {
+    "skillId":71,
+    "title":"Holds smaller items with one hand",
+    "description":"Holds small cup or tumbler in one hand.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":72,
-    "title":"Stacking",
-    "description":"Stacks four to six objects on top of one another.",
+    "title":"Unbuttons large buttons",
+    "description":"Unbuttons large buttons; unzips large zippers.",
     "developmentalAge":24,
     "developmentalAgeRange":12,
-    "dependencies":"62",
+    "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":73,
-    "title":"Biking",
-    "description":"Uses feet to propel wheeled riding toys.",
+    "title":"Opens doors with doorknobs",
+    "description":"Opens doors by turning doorknobs.",
     "developmentalAge":24,
     "developmentalAgeRange":12,
-    "dependencies":"63,71",
+    "dependencies":"65",
     "categories":"Motor"
   },
   {
     "skillId":74,
-    "title":"Walking",
-    "description":"Walks up and down stairs unassisted, using alternating feet; may jump from bottom step, landing on both feet.",
-    "developmentalAge":36,
+    "title":"Scribbles with crayon in fist",
+    "description":"Grasps large crayon with fist; scribbles.",
+    "developmentalAge":24,
     "developmentalAgeRange":12,
-    "dependencies":"56",
+    "dependencies":"61",
     "categories":"Motor"
   },
   {
     "skillId":75,
-    "title":"Prolonged balance on one foot",
-    "description":"Can momentarily balance on one foot.",
-    "developmentalAge":36,
+    "title":"Climbs up into chairs",
+    "description":"Climbs up on chair, turns, and sits down.",
+    "developmentalAge":24,
     "developmentalAgeRange":12,
-    "dependencies":"66",
+    "dependencies":"59,58",
     "categories":"Motor"
   },
   {
     "skillId":76,
-    "title":"Kicks larger objects",
-    "description":"Can kick big ball-shaped objects.",
-    "developmentalAge":36,
+    "title":"Stacks four to six objects",
+    "description":"Stacks four to six objects on top of one another.",
+    "developmentalAge":24,
     "developmentalAgeRange":12,
-    "dependencies":"75",
+    "dependencies":"64",
     "categories":"Motor"
   },
   {
     "skillId":77,
-    "title":"Eating",
-    "description":"Needs minimal assistance eating.",
-    "developmentalAge":36,
+    "title":"Propels wheeled toys with feet",
+    "description":"Uses feet to propel wheeled riding toys.",
+    "developmentalAge":24,
     "developmentalAgeRange":12,
-    "dependencies":"60",
+    "dependencies":"65,75",
     "categories":"Motor"
   },
   {
     "skillId":78,
-    "title":"Jumping",
-    "description":"Jumps on the spot.",
+    "title":"Climbs stairs with alternating feet",
+    "description":"Walks up and down stairs unassisted, using alternating feet; may jump from bottom step, landing on both feet.",
     "developmentalAge":36,
     "developmentalAgeRange":12,
-    "dependencies":"66",
+    "dependencies":"58",
     "categories":"Motor"
   },
   {
     "skillId":79,
-    "title":"Biking",
-    "description":"Pedals a small tricycle.",
-    "developmentalAge":36,
-    "developmentalAgeRange":12,
-    "dependencies":"73",
-    "categories":"Motor"
-  },
-  {
-    "skillId":80,
-    "title":"Throwing",
-    "description":"Throws a ball overhand; aim and distance are limited.",
+    "title":"Balances on one foot",
+    "description":"Can momentarily balance on one foot.",
     "developmentalAge":36,
     "developmentalAgeRange":12,
     "dependencies":"68",
     "categories":"Motor"
   },
   {
-    "skillId":81,
-    "title":"Catching",
-    "description":"Catches a large bounced ball with both arms extended.",
+    "skillId":80,
+    "title":"Kicks larger objects",
+    "description":"Can kick big ball-shaped objects.",
     "developmentalAge":36,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"79",
+    "categories":"Motor"
+  },
+  {
+    "skillId":81,
+    "title":"Eats with minimal assistance",
+    "description":"Needs minimal assistance eating.",
+    "developmentalAge":36,
+    "developmentalAgeRange":12,
+    "dependencies":"62",
     "categories":"Motor"
   },
   {
     "skillId":82,
-    "title":"Kicking",
-    "description":"Enjoys swinging on a swing.",
+    "title":"Jumps on spot",
+    "description":"Jumps on the spot.",
     "developmentalAge":36,
     "developmentalAgeRange":12,
-    "dependencies":"71",
+    "dependencies":"68",
     "categories":"Motor"
   },
   {
     "skillId":83,
-    "title":"Drawing",
-    "description":"Shows improved control of crayons or markers; uses vertical, horizontal and circular strokes.",
+    "title":"Pedals small tricycle",
+    "description":"Pedals a small tricycle.",
     "developmentalAge":36,
     "developmentalAgeRange":12,
-    "dependencies":"70",
+    "dependencies":"77",
     "categories":"Motor"
   },
   {
     "skillId":84,
-    "title":"Drawing",
-    "description":"Holds crayon or marker between first two fingers and thumb (tripod grasp), not in a fist as earlier.",
+    "title":"Throws overhand",
+    "description":"Throws a ball overhand; aim and distance are limited.",
     "developmentalAge":36,
     "developmentalAgeRange":12,
     "dependencies":"70",
@@ -757,34 +757,70 @@
   },
   {
     "skillId":85,
-    "title":"Turns pages of book",
-    "description":"Can turn pages of a book one at a time",
+    "title":"Catches with both arms",
+    "description":"Catches a large bounced ball with both arms extended.",
     "developmentalAge":36,
     "developmentalAgeRange":12,
-    "dependencies":"61",
+    "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":86,
-    "title":"Stacking",
-    "description":"Enjoys building with blocks.",
+    "title":"Swings on swing",
+    "description":"Enjoys swinging on a swing.",
     "developmentalAge":36,
     "developmentalAgeRange":12,
-    "dependencies":"72",
+    "dependencies":"75",
     "categories":"Motor"
   },
   {
     "skillId":87,
-    "title":"Stacking",
-    "description":"Builds a tower of eight or more blocks.",
+    "title":"Uses controlled strokes when drawing",
+    "description":"Shows improved control of crayons or markers; uses vertical, horizontal and circular strokes.",
     "developmentalAge":36,
     "developmentalAgeRange":12,
-    "dependencies":"72",
+    "dependencies":"74",
     "categories":"Motor"
   },
   {
     "skillId":88,
-    "title":"Sculpting",
+    "title":"Uses two fingers when drawing",
+    "description":"Holds crayon or marker between first two fingers and thumb (tripod grasp), not in a fist as earlier.",
+    "developmentalAge":36,
+    "developmentalAgeRange":12,
+    "dependencies":"74",
+    "categories":"Motor"
+  },
+  {
+    "skillId":89,
+    "title":"Turns pages of book",
+    "description":"Can turn pages of a book one at a time",
+    "developmentalAge":36,
+    "developmentalAgeRange":12,
+    "dependencies":"63",
+    "categories":"Motor"
+  },
+  {
+    "skillId":90,
+    "title":"Builds with blocks",
+    "description":"Enjoys building with blocks.",
+    "developmentalAge":36,
+    "developmentalAgeRange":12,
+    "dependencies":"76",
+    "categories":"Motor"
+  },
+  {
+    "skillId":91,
+    "title":"Builds tower with eight or more blocks",
+    "description":"Builds a tower of eight or more blocks.",
+    "developmentalAge":36,
+    "developmentalAgeRange":12,
+    "dependencies":"76",
+    "categories":"Motor"
+  },
+  {
+    "skillId":92,
+    "title":"Pounds, rolls and squeezes clay",
     "description":"Enjoys playing with clay; pounds, rolls, and squeezes it.",
     "developmentalAge":36,
     "developmentalAgeRange":12,
@@ -792,8 +828,8 @@
     "categories":"Motor"
   },
   {
-    "skillId":89,
-    "title":"Hand Dominance",
+    "skillId":93,
+    "title":"Shows slight hand dominance",
     "description":"May begin to show hand dominance.",
     "developmentalAge":36,
     "developmentalAgeRange":12,
@@ -801,25 +837,25 @@
     "categories":"Motor"
   },
   {
-    "skillId":90,
-    "title":"Carrying",
+    "skillId":94,
+    "title":"Carries liquid with little spillage",
     "description":"Carries a container of liquid, such as a cup of milk or bowl of water, without much spilling; pours liquid from pitcher into another container.",
     "developmentalAge":36,
     "developmentalAgeRange":12,
-    "dependencies":"58",
+    "dependencies":"60",
     "categories":"Motor"
   },
   {
-    "skillId":91,
-    "title":"Increased dexterity",
+    "skillId":95,
+    "title":"Manipulates buttons and zippers on clothing",
     "description":"Manipulates large buttons and zippers on clothing.",
     "developmentalAge":36,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"72",
     "categories":"Motor"
   },
   {
-    "skillId":92,
+    "skillId":96,
     "title":"Washes and dries hands",
     "description":"Washes and dries hands",
     "developmentalAge":36,
@@ -828,17 +864,17 @@
     "categories":"Motor"
   },
   {
-    "skillId":93,
-    "title":"Brushes Teeth",
+    "skillId":97,
+    "title":"Brushes own teeth",
     "description":"Brushes own teeth, but not thoroughly",
     "developmentalAge":36,
     "developmentalAgeRange":12,
     "dependencies":"",
-    "categories":""
+    "categories":"Motor"
   },
   {
-    "skillId":94,
-    "title":"Potty Training",
+    "skillId":98,
+    "title":"Can control bladder",
     "description":"Usually achieves complete bladder control during this time.",
     "developmentalAge":36,
     "developmentalAgeRange":12,
@@ -846,89 +882,89 @@
     "categories":"Motor"
   },
   {
-    "skillId":95,
-    "title":"Walking",
+    "skillId":99,
+    "title":"Walks straight line",
     "description":"Walks a straight line (tape or chalk line on the floor).",
     "developmentalAge":48,
     "developmentalAgeRange":12,
-    "dependencies":"63",
-    "categories":"Motor"
-  },
-  {
-    "skillId":96,
-    "title":"Hops on one foot",
-    "description":"Hops on one foot.",
-    "developmentalAge":48,
-    "developmentalAgeRange":12,
-    "dependencies":"",
-    "categories":"Motor"
-  },
-  {
-    "skillId":97,
-    "title":"Biking",
-    "description":"Pedals and steers a wheeled toy with confidence; turns corners, avoids obstacles and oncoming \"traffic.\"",
-    "developmentalAge":48,
-    "developmentalAgeRange":12,
-    "dependencies":"79",
-    "categories":"Motor"
-  },
-  {
-    "skillId":98,
-    "title":"Climbing",
-    "description":"Climbs ladders, trees, playground equipment.",
-    "developmentalAge":48,
-    "developmentalAgeRange":12,
-    "dependencies":"74",
-    "categories":"Motor"
-  },
-  {
-    "skillId":99,
-    "title":"Jumping",
-    "description":"Jumps over objects 12 to 15 cm (5 to 6 in) high; lands with both feet together.",
-    "developmentalAge":48,
-    "developmentalAgeRange":12,
-    "dependencies":"96",
+    "dependencies":"65",
     "categories":"Motor"
   },
   {
     "skillId":100,
-    "title":"Running",
-    "description":"Runs, starts, stops, and moves around obstacles with ease.",
+    "title":"Hops on one foot",
+    "description":"Hops on one foot.",
     "developmentalAge":48,
     "developmentalAgeRange":12,
-    "dependencies":"55,63",
+    "dependencies":"68",
     "categories":"Motor"
   },
   {
     "skillId":101,
-    "title":"Throwing",
-    "description":"Throws a ball overhand; distance and aim improving.",
+    "title":"Avoids obstacles when pedaling toy",
+    "description":"Pedals and steers a wheeled toy with confidence; turns corners, avoids obstacles and oncoming \"traffic.\"",
     "developmentalAge":48,
     "developmentalAgeRange":12,
-    "dependencies":"80",
+    "dependencies":"83",
     "categories":"Motor"
   },
   {
     "skillId":102,
-    "title":"Stacking",
-    "description":"Builds a tower with ten or more blocks.",
+    "title":"Climbs ladders and playground equipment",
+    "description":"Climbs ladders, trees, playground equipment.",
     "developmentalAge":48,
     "developmentalAgeRange":12,
-    "dependencies":"87",
+    "dependencies":"78",
     "categories":"Motor"
   },
   {
     "skillId":103,
-    "title":"Sculpting",
-    "description":"Forms shapes and objects out of clay: cookies, snakes, simple animals.",
+    "title":"Jumps over taller objects",
+    "description":"Jumps over objects 12 to 15 cm (5 to 6 in) high; lands with both feet together.",
     "developmentalAge":48,
     "developmentalAgeRange":12,
-    "dependencies":"88",
+    "dependencies":"100",
     "categories":"Motor"
   },
   {
     "skillId":104,
-    "title":"Writing",
+    "title":"Runs with control",
+    "description":"Runs, starts, stops, and moves around obstacles with ease.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"57,65",
+    "categories":"Motor"
+  },
+  {
+    "skillId":105,
+    "title":"Throws overhand with increased aim",
+    "description":"Throws a ball overhand; distance and aim improving.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"84",
+    "categories":"Motor"
+  },
+  {
+    "skillId":106,
+    "title":"Builds tower with ten or more blocks",
+    "description":"Builds a tower with ten or more blocks.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"91",
+    "categories":"Motor"
+  },
+  {
+    "skillId":107,
+    "title":"Uses clay to create shapes and objects",
+    "description":"Forms shapes and objects out of clay: cookies, snakes, simple animals.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"92",
+    "categories":"Motor"
+  },
+  {
+    "skillId":108,
+    "title":"Draws shapes and letters",
     "description":"Reproduces some shapes and letters.",
     "developmentalAge":48,
     "developmentalAgeRange":12,
@@ -936,8 +972,8 @@
     "categories":"Motor"
   },
   {
-    "skillId":105,
-    "title":"Drawing",
+    "skillId":109,
+    "title":"Draws with tripod grasp",
     "description":"Holds a crayon or marker using a tripod grasp.",
     "developmentalAge":48,
     "developmentalAgeRange":12,
@@ -945,8 +981,8 @@
     "categories":"Motor"
   },
   {
-    "skillId":106,
-    "title":"Drawing",
+    "skillId":110,
+    "title":"Draws with purpose",
     "description":"Paints and draws with purpose; may have an idea in mind, but often has problems implementing it so calls the creation something else.",
     "developmentalAge":48,
     "developmentalAgeRange":12,
@@ -954,8 +990,8 @@
     "categories":"Motor"
   },
   {
-    "skillId":107,
-    "title":"",
+    "skillId":111,
+    "title":"Increased accuracy at hitting toys with hammer",
     "description":"Becomes more accurate at hitting nails and pegs with hammer.",
     "developmentalAge":48,
     "developmentalAgeRange":12,
@@ -963,8 +999,8 @@
     "categories":"Motor"
   },
   {
-    "skillId":108,
-    "title":"",
+    "skillId":112,
+    "title":"Threads wooden beads on string",
     "description":"Threads small wooden beads on a string.",
     "developmentalAge":48,
     "developmentalAgeRange":12,
@@ -972,8 +1008,8 @@
     "categories":"Motor"
   },
   {
-    "skillId":109,
-    "title":"Running",
+    "skillId":113,
+    "title":"Runs in circle",
     "description":"Can run in a circle",
     "developmentalAge":48,
     "developmentalAgeRange":12,
@@ -981,8 +1017,8 @@
     "categories":"Motor"
   },
   {
-    "skillId":110,
-    "title":"Walking",
+    "skillId":114,
+    "title":"Walks backwards",
     "description":"Walks backwards, toe to heel.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
@@ -990,17 +1026,17 @@
     "categories":"Motor"
   },
   {
-    "skillId":111,
-    "title":"Walking",
+    "skillId":115,
+    "title":"Climbs stairs with alternating feet",
     "description":"Walks unassisted up and down stairs, alternating feet.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"67",
     "categories":"Motor"
   },
   {
-    "skillId":112,
-    "title":"",
+    "skillId":116,
+    "title":"Somersaults",
     "description":"May learn to turn somersaults (should be taught the right way in order to avoid injury).",
     "developmentalAge":60,
     "developmentalAgeRange":12,
@@ -1008,8 +1044,8 @@
     "categories":"Motor"
   },
   {
-    "skillId":113,
-    "title":"",
+    "skillId":117,
+    "title":"Touches toes without bending knees",
     "description":"Can touch toes without flexing knees.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
@@ -1017,17 +1053,17 @@
     "categories":"Motor"
   },
   {
-    "skillId":114,
-    "title":"Balancing",
+    "skillId":118,
+    "title":"Walks a balance beam",
     "description":"Walks a balance beam.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"79",
     "categories":"Motor"
   },
   {
-    "skillId":115,
-    "title":"Skipping",
+    "skillId":119,
+    "title":"Skips with alternate feet",
     "description":"Learns to skip using alternative feet.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
@@ -1035,44 +1071,44 @@
     "categories":"Motor"
   },
   {
-    "skillId":116,
-    "title":"Catching",
+    "skillId":120,
+    "title":"Catches ball from short distance",
     "description":"Catches a ball thrown from 1 m (3.3 ft) away.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"85",
     "categories":"Motor"
   },
   {
-    "skillId":117,
-    "title":"Biking",
+    "skillId":121,
+    "title":"Skillfully steers wheeled toy",
     "description":"Rides a tricycle or wheeled toy with speed and skillful steering; some children learning to ride bicycles, usually with training wheels.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"101",
     "categories":"Motor"
   },
   {
-    "skillId":118,
-    "title":"Jumping",
+    "skillId":122,
+    "title":"Jumps multiple times without falling",
     "description":"Jumps or hops forward ten times in a row without falling.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"103",
     "categories":"Motor"
   },
   {
-    "skillId":119,
-    "title":"Balancing",
+    "skillId":123,
+    "title":"Balances on one foot for longer duration",
     "description":"Balances on either foot with good control for ten seconds.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"79",
     "categories":"Motor"
   },
   {
-    "skillId":120,
-    "title":"Sculpting",
+    "skillId":124,
+    "title":"Builds 3D structure",
     "description":"Builds three-dimensional structures with small cubes by copying from a picture or model.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
@@ -1080,17 +1116,17 @@
     "categories":"Motor"
   },
   {
-    "skillId":121,
-    "title":"Writing",
+    "skillId":125,
+    "title":"Writes shapes and letters",
     "description":"Reproduces many shapes and letters: square, triangle, A, I, O, U, C, H, L, T.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"108",
     "categories":"Motor"
   },
   {
-    "skillId":122,
-    "title":"Drawing",
+    "skillId":126,
+    "title":"Uses pencil with control",
     "description":"Demonstrates fair control of pencil or marker; may begin to color within the lines.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
@@ -1098,8 +1134,8 @@
     "categories":"Motor"
   },
   {
-    "skillId":123,
-    "title":"Cutting",
+    "skillId":127,
+    "title":"Uses scissors with limited precision",
     "description":"Cuts on the line with scissors (not perfectly).",
     "developmentalAge":60,
     "developmentalAgeRange":12,
@@ -1107,8 +1143,8 @@
     "categories":"Motor"
   },
   {
-    "skillId":124,
-    "title":"Hand Dominance",
+    "skillId":128,
+    "title":"Established hand dominance",
     "description":"Hand dominance is fairly well established",
     "developmentalAge":60,
     "developmentalAgeRange":12,
@@ -1116,8 +1152,8 @@
     "categories":"Motor"
   },
   {
-    "skillId":125,
-    "title":"",
+    "skillId":129,
+    "title":"Cognitive?",
     "description":"Often has an imaginary friend",
     "developmentalAge":60,
     "developmentalAgeRange":12,
@@ -1125,8 +1161,8 @@
     "categories":"Motor"
   },
   {
-    "skillId":126,
-    "title":"",
+    "skillId":130,
+    "title":"Greater control with movements",
     "description":"Gains greater control over large and fine motor skills; movements are more precise and deliberate, though some clumsiness persists.",
     "developmentalAge":72,
     "developmentalAgeRange":12,
@@ -1134,8 +1170,8 @@
     "categories":"Motor"
   },
   {
-    "skillId":127,
-    "title":"",
+    "skillId":131,
+    "title":"Enjoys vigorous play",
     "description":"Enjoys vigorous running, jumping, climbing, and throwing etc.",
     "developmentalAge":72,
     "developmentalAgeRange":12,
@@ -1143,8 +1179,8 @@
     "categories":"Motor"
   },
   {
-    "skillId":128,
-    "title":"",
+    "skillId":132,
+    "title":"Active",
     "description":"Has trouble staying still.",
     "developmentalAge":72,
     "developmentalAgeRange":12,
@@ -1152,45 +1188,9 @@
     "categories":"Motor"
   },
   {
-    "skillId":129,
-    "title":"Cognitive?",
-    "description":"Span of attention increases; works at tasks for longer periods of time, though",
-    "developmentalAge":72,
-    "developmentalAgeRange":12,
-    "dependencies":"",
-    "categories":"Motor"
-  },
-  {
-    "skillId":130,
-    "title":"Cognitive?",
-    "description":"Can concentrate effort but not always consistently.",
-    "developmentalAge":72,
-    "developmentalAgeRange":12,
-    "dependencies":"",
-    "categories":"Motor"
-  },
-  {
-    "skillId":131,
-    "title":"Cognitive?",
-    "description":"Understands time (today, tomorrow, yesterday) and simple motion (things go faster than others).",
-    "developmentalAge":72,
-    "developmentalAgeRange":12,
-    "dependencies":"",
-    "categories":"Motor"
-  },
-  {
-    "skillId":132,
-    "title":"Cognitive?",
-    "description":"Recognizes seasons and major activities done in the times.",
-    "developmentalAge":72,
-    "developmentalAgeRange":12,
-    "dependencies":"",
-    "categories":"Motor"
-  },
-  {
     "skillId":133,
-    "title":"Cognitive?",
-    "description":"Has fun with problem solving and sorting activities like stacking, puzzles and mazes",
+    "title":"Increased attention span",
+    "description":"Span of attention increases; works at tasks for longer periods of time",
     "developmentalAge":72,
     "developmentalAgeRange":12,
     "dependencies":"",
@@ -1199,7 +1199,7 @@
   {
     "skillId":134,
     "title":"Cognitive?",
-    "description":"Enjoys the challenge of puzzles, counting and sorting activities, paper-and-pencil mazes, and games that involve matching letters and words with pictures.",
+    "description":"Can concentrate effort but not always consistently.",
     "developmentalAge":72,
     "developmentalAgeRange":12,
     "dependencies":"",
@@ -1207,8 +1207,8 @@
   },
   {
     "skillId":135,
-    "title":"Reading",
-    "description":"Recognizes some words by sight; attempts to sound out words",
+    "title":"Cognitive?",
+    "description":"Understands time (today, tomorrow, yesterday) and simple motion (things go faster than others).",
     "developmentalAge":72,
     "developmentalAgeRange":12,
     "dependencies":"",
@@ -1216,8 +1216,8 @@
   },
   {
     "skillId":136,
-    "title":"Reading",
-    "description":"In some cases the child may be reading well.",
+    "title":"Cognitive?",
+    "description":"Recognizes seasons and major activities done in the times.",
     "developmentalAge":72,
     "developmentalAgeRange":12,
     "dependencies":"",
@@ -1225,8 +1225,8 @@
   },
   {
     "skillId":137,
-    "title":"",
-    "description":"functioning which facilitates learning to ride a bicycle, swim, swing a bat, or kick a ball.",
+    "title":"Cognitive?",
+    "description":"Has fun with problem solving and sorting activities like stacking, puzzles and mazes",
     "developmentalAge":72,
     "developmentalAgeRange":12,
     "dependencies":"",
@@ -1234,8 +1234,8 @@
   },
   {
     "skillId":138,
-    "title":"",
-    "description":"Making things is enjoyed.",
+    "title":"Cognitive?",
+    "description":"Enjoys the challenge of puzzles, counting and sorting activities, paper-and-pencil mazes, and games that involve matching letters and words with pictures.",
     "developmentalAge":72,
     "developmentalAgeRange":12,
     "dependencies":"",
@@ -1243,6 +1243,42 @@
   },
   {
     "skillId":139,
+    "title":"Recognizes some words by sight",
+    "description":"Recognizes some words by sight; attempts to sound out words",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Motor"
+  },
+  {
+    "skillId":140,
+    "title":"Increased reading level",
+    "description":"In some cases the child may be reading well.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"139",
+    "categories":"Motor"
+  },
+  {
+    "skillId":141,
+    "title":"Increased dexterity",
+    "description":"functioning which facilitates learning to ride a bicycle, swim, swing a bat, or kick a ball.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Motor"
+  },
+  {
+    "skillId":142,
+    "title":"Cognitive?",
+    "description":"Making things is enjoyed.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Motor"
+  },
+  {
+    "skillId":143,
     "title":"Reading",
     "description":"Reverses or confuse certain letters: b/d, p/g, g/q, t/f.",
     "developmentalAge":72,
@@ -1251,8 +1287,8 @@
     "categories":"Motor"
   },
   {
-    "skillId":140,
-    "title":"Drawing",
+    "skillId":144,
+    "title":"Draws traced objects",
     "description":"Able to trace objects.",
     "developmentalAge":72,
     "developmentalAgeRange":12,
@@ -1260,21 +1296,1551 @@
     "categories":"Motor"
   },
   {
-    "skillId":141,
-    "title":"Cutting",
+    "skillId":145,
+    "title":"Uses scissors to cut shapes",
     "description":"Folds and cuts paper into simple shapes.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"127",
+    "categories":"Motor"
+  },
+  {
+    "skillId":146,
+    "title":"Ties shoelaces",
+    "description":"Can Tie Laces, string (like shoes).",
     "developmentalAge":72,
     "developmentalAgeRange":12,
     "dependencies":"",
     "categories":"Motor"
   },
   {
-    "skillId":142,
-    "title":"Ties Shoes",
-    "description":"Can Tie Laces, string (like shoes).",
+    "skillId":147,
+    "title":"Enjoys object-hiding activites",
+    "description":"Enjoys object-hiding activities.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"27",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":148,
+    "title":"Remembers where objects have been hidden",
+    "description":"Early in this period, the child always searches in the same location for a hidden object (if the child has watched the hiding of an object). Later, the child will search in several locations.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"26,42",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":149,
+    "title":"Passes objects between hands when offered additional item",
+    "description":"Passes toy to other hand when offered a second object (referred to as \"crossing the midline\" – an important neurological development).",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"30",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":150,
+    "title":"Manages holding three or more objects by placing original item aside",
+    "description":"Manages three to four objects by setting an object aside (on lap or floor) when presented with a new toy.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"149",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":151,
+    "title":"Decrease in putting objects in mouth",
+    "description":"Puts toys in mouth less often.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"19",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":152,
+    "title":"Enjoys picture books",
+    "description":"Enjoys looking at picture books.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":153,
+    "title":"Understands functional relationships of objects",
+    "description":"Demonstrates understanding of functional relationships (objects that belong together): Puts spoon in bowl and then uses spoon as if eating; places teacup on saucer and sips from cup; tries to make doll stand up.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":154,
+    "title":"Shows/Offers toys to other people",
+    "description":"Shows or offers toy to another person to look at.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":155,
+    "title":"Can name everyday objects",
+    "description":"Names many everyday objects.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":156,
+    "title":"Increased spatial understanding",
+    "description":"Shows increasing understanding of spatial and form discrimination: puts all pegs in a pegboard; places three geometric shapes in large formboard or puzzle.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":157,
+    "title":"Fills and empties containers",
+    "description":"Places several small items (blocks, clothespins, cereal pieces) in a container or bottle and then dumps them out.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"33",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":158,
+    "title":"Attempts to use mechanical objects",
+    "description":"Tries to make mechanical objects work after watching someone else do so.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":159,
+    "title":"Begins to imitate facial expressions",
+    "description":"Responds with some facial movement, but cannot truly imitate facial expression.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":160,
+    "title":"Increased eye-hand coordination",
+    "description":"Eye–hand movements better coordinated; can put objects together, take them apart; fit large pegs into pegboard.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":161,
+    "title":"Uses objects for other purposes than intended",
+    "description":"Begins to use objects for purposes other than intended (may push a block around as a boat).",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":162,
+    "title":"Can classify objects by one dimension",
+    "description":"Does simple classification tasks based on single dimension (separates toy dinosaurs from toy cars).",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":163,
+    "title":"Interested in figuring out environmental situations",
+    "description":"Seems fascinated by, or engrossed in, figuring out situations: where the tennis ball rolled, where the dog went, what caused a particular noise.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":164,
+    "title":"Increased attention span",
+    "description":"Attends to self-selected activities for longer periods of time. ",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":165,
+    "title":"Discovers cause and effect of actions",
+    "description":"Discovering cause and effect: squeezing the cat makes her scratch.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":166,
+    "title":"Understands object permanence",
+    "description":"Knows where familiar persons should be; notes their absence; finds a hidden object by looking in last hiding place first. (This is what Piaget termed object permanence, which usually occurs during the sensorimotor stage of Piaget's childhood theory of cognitive development)",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":167,
+    "title":"Names familiar objects",
+    "description":"Names familiar objects.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":168,
+    "title":"Able to express location of pain",
+    "description":"Recognizes, expresses, and locates pain.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":169,
+    "title":"Uses magical thinking",
+    "description":"Expected to use \"magical thinking\", such as believing a toy bear is a real bear.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":170,
+    "title":"Recounts non-present objects and events",
+    "description":"Tells about objects and events not immediately present (this is both a cognitive and linguistic advance).",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":171,
+    "title":"Increased curiosity about the world",
+    "description":"Expresses more curiosity about the world.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":172,
+    "title":"Listens attentively to age-appropriate stories",
+    "description":"Listens attentively to age-appropriate stories.",
+    "developmentalAge":36,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":173,
+    "title":"Provides relevant comments on stories",
+    "description":"Makes relevant comments during stories, especially those that relate to home and family events.",
+    "developmentalAge":36,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":174,
+    "title":"Reads books by explaining pictures",
+    "description":"Likes to look at books and may pretend to \"read\" to others or explain pictures.",
+    "developmentalAge":36,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":175,
+    "title":"Enjoys guessing stories",
+    "description":"Enjoys stories with riddles, guessing, and \"suspense.\"",
+    "developmentalAge":36,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":176,
+    "title":"Speaks in an understandable manner",
+    "description":"Speech is understandable most of the time.",
+    "developmentalAge":36,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":177,
+    "title":"Uses expanded noun phrases",
+    "description":"Produces expanded noun phrases: \"big, brown dog.\"",
+    "developmentalAge":36,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":178,
+    "title":"Creates verbs and plural nouns",
+    "description":"Produces verbs with \"ing\" endings; uses \"-s\" to indicate more than one; often puts \"-s\" on already pluralized forms: geeses, mices.",
+    "developmentalAge":36,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":179,
+    "title":"Indicates negative with language",
+    "description":"Indicates negatives by inserting \"no\" or \"not\" before a simple noun or verb phrase: \"Not baby.\"",
+    "developmentalAge":36,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":180,
+    "title":"Answers \"What?\", \"Where?\" and \"Why?\" questions",
+    "description":"Answers \"What are you doing?\", \"What is this?\", and \"Where?\" questions dealing with familiar objects and events.",
+    "developmentalAge":36,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":181,
+    "title":"Understands rhyme words",
+    "description":"Can recognize that certain words sound similar",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":182,
+    "title":"Can recognize about twenty uppercase letters",
+    "description":"Names eighteen to twenty uppercase letters. ",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":183,
+    "title":"Writes several letters and name",
+    "description":"Writes several letters and sometimes their name.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":184,
+    "title":"Reads simple books",
+    "description":"A few children are beginning to read simple books, such as alphabet books with only a few words per page and many pictures.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":185,
+    "title":"Interest in how things grown and operate",
+    "description":"Likes stories about how things grow and how things operate.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":186,
+    "title":"Uses silly language",
+    "description":"Delights in wordplay, creating silly Language.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":187,
+    "title":"Understands comparitive speech",
+    "description":"Understands the concepts of \"tallest,\" \"biggest,\" \"same,\" and \"more\"; selects the picture that has the \"most houses\" or the \"biggest dogs.\"",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":188,
+    "title":"Counts to 20 or more",
+    "description":"Rote counts to 20 or more.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":189,
+    "title":"Understands sequence of daily events",
+    "description":"Understands the sequence of daily events: \"When we get up in the morning, we get dressed, have breakfast, brush our teeth, and go to school.\"",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":190,
+    "title":"Recognizes missing objects in pictures",
+    "description":"When looking at pictures, can recognize and identify missing puzzle parts (of person, car, animal).",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":191,
+    "title":"Increased story-telling ability",
+    "description":"Very good storytellers.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":192,
+    "title":"Can count one to seven objects",
+    "description":"Counts 1 to 7 objects out loud, but not always in order",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":193,
+    "title":"Follows directions up to three steps",
+    "description":"follows two to three step directions given individually or in a group",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":194,
+    "title":"Adds \"ed\" to verbs",
+    "description":"may put the \"ed\" on the end of words such as \"I goed outside and I played.\"",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":195,
+    "title":"Builds shapes from other shapes",
+    "description":"Forms rectangle from two triangular cuts.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":196,
+    "title":"Builds more complex objects with blocks",
+    "description":"Builds steps with set of small blocks.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"90,91",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":197,
+    "title":"Understands shape and size",
+    "description":"Understands concept of same shape, same size.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":198,
+    "title":"Sorts objects by two dimensions",
+    "description":"Sorts objects on the basis of two dimensions, such as color and form.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":199,
+    "title":"Classifies objects by common feature",
+    "description":"Sorts a variety of objects so that all things in the group have a single common feature (classification skill: all are food items or boats or animals).",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":200,
+    "title":"Sorts objects in order",
+    "description":"Understands the concepts of smallest and shortest; places objects in order from shortest to tallest, smallest to largest.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":201,
+    "title":"Identifies objects by serial position",
+    "description":"Identifies objects with specified serial position: first, second, last.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":202,
+    "title":"Counts above 20",
+    "description":"Rote counts to 20 and above; many children count to 100.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":203,
+    "title":"Reads numbers",
+    "description":"Recognizes numerals from 1 to 10.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":204,
+    "title":"Understands concept of \"less than\"",
+    "description":"Understands the concepts of less than: \"Which bowl has less water?\"",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":205,
+    "title":"Understands descriptive terms",
+    "description":"Understands the terms dark, light, and early: \"I got up early, before anyone else. It was still dark.\"",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":206,
+    "title":"Relates daily schedule to time on clock",
+    "description":"Relates clock time to daily schedule: \"Time to turn on TV when the little hand points to 5.\"",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":207,
+    "title":"Able to tell time by the hour",
+    "description":"Some children can tell time on the hour: five o'clock, two o'clock.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":208,
+    "title":"Understand the concept of a calendar",
+    "description":"Knows what a calendar is for.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":209,
+    "title":"Able to count coins",
+    "description":"Recognizes and identifies coins; beginning to count and save money.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":210,
+    "title":"Knows the alphabet",
+    "description":"Many children know the alphabet and names of upper- and lowercase letters.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":211,
+    "title":"Understand the concept of \"half\"",
+    "description":"Understands the concept of half; can say how many pieces an object has when it's been cut in half.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":212,
+    "title":"Ask innumberable questions",
+    "description":"Asks innumerable questions: Why? What? Where? When? How?",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":213,
+    "title":"Interest in learning new things",
+    "description":"Eager to learn new things.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Cognitive"
+  },
+  {
+    "skillId":214,
+    "title":"Produces \"jargon\"",
+    "description":"Produces considerable \"jargon\": puts words and sounds together into speech-like (inflected) patterns.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":215,
+    "title":"Holophrastic Speech",
+    "description":"Holophrastic speech: uses one word to convey an entire thought; meaning depends on the inflection (\"me\" may be used to request more cookies or a desire to feed self). ",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"214",
+    "categories":"Language"
+  },
+  {
+    "skillId":216,
+    "title":"Telegraphic Speech",
+    "description":"Produces two-word phrases to express a complete thought (telegraphic speech): \"More cookie,\" \"Daddy bye-bye.\"",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"215",
+    "categories":"Language"
+  },
+  {
+    "skillId":217,
+    "title":"Follows simple directions",
+    "description":"Follows simple directions, \"Give Daddy the cup.\"",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":218,
+    "title":"Responds to questions by pointing",
+    "description":"When asked, will point to familiar persons, animals, and toys.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":219,
+    "title":"Points to three body parts when named",
+    "description":"Identifies three body parts if someone names them: \"Show me your nose (toe, ear).\"",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":220,
+    "title":"Verbally indicates desired objects and activities",
+    "description":"Indicates a few desired objects and activities by name: \"Bye-bye,\" \"cookie\"; verbal request is often accompanied by an insistent gesture.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":221,
+    "title":"Responds verbally and with head movement to \"yes\" or \"no\" questions",
+    "description":"Responds to simple questions with \"yes\" or \"no\" and appropriate head movement.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":222,
+    "title":"Speech is 25%-50% intelligible",
+    "description":"Speech is 25 to 50 percent intelligible during this period.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"216",
+    "categories":"Language"
+  },
+  {
+    "skillId":223,
+    "title":"Locates familiar objects on request",
+    "description":"Locates familiar objects on request (if child knows location of objects).",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":224,
+    "title":"Uses five to fifty words",
+    "description":"Acquires and uses five to fifty words; typically these are words that refer to animals, food, and toys.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"222",
+    "categories":"Language"
+  },
+  {
+    "skillId":225,
+    "title":"Directs adult attention with gestures",
+    "description":"Uses gestures, such as pointing or pulling, to direct adult attention.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":226,
+    "title":"Tries to join rhymes and songs",
+    "description":"Enjoys rhymes and songs; tries to join in.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":227,
+    "title":"Aware of reciprocal aspects of conversational exchanges",
+    "description":"Seems aware of reciprocal (back and forth) aspects of conversational exchanges; some turn-taking in other kinds of vocal exchanges, such as making and imitating sounds.",
+    "developmentalAge":12,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":228,
+    "title":"Participates while being read to",
+    "description":"Enjoys participating while being read to.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":229,
+    "title":"Uses language to get desired response",
+    "description":"Realizes language is effective for getting desired responses.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":230,
+    "title":"Uses fifty to three hundred words",
+    "description":"Uses fifty to three-hundred words; vocabulary continuously increasing.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"224",
+    "categories":"Language"
+  },
+  {
+    "skillId":231,
+    "title":"",
+    "description":"Has broken the linguistic code; in other words, much of a two-year-old's talk has meaning to him or her.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":232,
+    "title":"",
+    "description":"Receptive language is more developed than expressive language; most two-year olds understand significantly more than they can talk about.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":233,
+    "title":"",
+    "description":"Utters three- and four-word statements; uses conventional word order to form more complete sentences.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":234,
+    "title":"",
+    "description":"Refers to self as \"me\" or sometimes \"I\" rather than by name: \"Me go bye-bye\"; has no trouble verbalizing \"mine.\"",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":235,
+    "title":"",
+    "description":"Expresses negative statements by tacking on a negative word such as \"no\" or \"not\": \"Not more milk.\"",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":236,
+    "title":"",
+    "description":"Uses some plurals.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":237,
+    "title":"",
+    "description":"Some stammering and other dysfluencies are common.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":238,
+    "title":"",
+    "description":"Speech is as much as 65 to 70 percent intelligible.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":239,
+    "title":"",
+    "description":"Is able to verbalize needs.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":240,
+    "title":"",
+    "description":"Asks a lot of questions.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":241,
+    "title":"",
+    "description":"Shows signs of empathy and caring: comforts another child if hurt or frightened; appears to sometimes be overly affectionate in offering hugs and kisses to children",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":242,
+    "title":"",
+    "description":"Continues to use physical aggression if frustrated or angry (for some children, this is more exaggerated than for others); Physical aggression usually lessens as verbal skills improve.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":243,
+    "title":"",
+    "description":"Temper tantrums likely to peak during this year; extremely difficult to reason with during a tantrum.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":244,
+    "title":"",
+    "description":"Impatient; finds it difficult to wait or take turns.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":245,
+    "title":"",
+    "description":"Enjoys \"helping\" with household chores; imitates everyday activities: may try to toilet train a stuffed animal, feed a doll.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":246,
+    "title":"",
+    "description":"Bossy with parents and caregivers; orders them around, makes demands, expects immediate compliance from adults.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":247,
+    "title":"",
+    "description":"Watches and imitates the play of other children, but seldom interacts directly; plays near others, often choosing similar toys and activities (parallel play);[6] solitary play is often simple and repetitive.[7]",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":248,
+    "title":"",
+    "description":"Offers toys to other children, but is usually possessive of playthings; still tends to hoard toys.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":249,
+    "title":"",
+    "description":"Making choices is difficult; wants it both ways.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":250,
+    "title":"",
+    "description":"Often defiant; shouting \"no\" becomes automatic.",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":251,
+    "title":"",
+    "description":"Ritualistic; wants everything \"just so\"; routines carried out exactly as before; belongings placed \"where they belong.\"",
+    "developmentalAge":24,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":252,
+    "title":"",
+    "description":"Uses the prepositions \"on,\" \"in,\" and \"under.\"",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":253,
+    "title":"",
+    "description":"Uses possessives consistently: \"hers,\" \"theirs,\" \"baby's.\"",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":254,
+    "title":"",
+    "description":"Answers \"Whose?\", \"Who?\", \"Why?\", and \"How many?\"",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":255,
+    "title":"",
+    "description":"Produces elaborate sentence structures: \"The cat ran under the house before I could see what color it was.\"",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":256,
+    "title":"",
+    "description":"Speech is almost entirely intelligible.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":257,
+    "title":"",
+    "description":"Begins to use the past tense of verbs correctly: \"Mommy closed the door,\" \"Daddy went to work.\"",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":258,
+    "title":"",
+    "description":"Refers to activities, events, objects, and people that are not present.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":259,
+    "title":"",
+    "description":"Changes tone of voice and sentence structure to adapt to listener's level of understanding: To baby brother, \"Milk gone?\" To Mother, \"Did the baby drink all of his milk?\"",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":260,
+    "title":"",
+    "description":"States first and last name, gender, siblings' names, and sometimes own telephone number.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":261,
+    "title":"",
+    "description":"Answers appropriately when asked what to do if tired, cold, or hungry. Recites and sings simple songs like mangoes and rhymes.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":262,
+    "title":"",
+    "description":"Outgoing; friendly; overly enthusiastic at times.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":263,
+    "title":"",
+    "description":"Moods change rapidly and unpredictably; laughing one minute, crying the next; may throw tantrum over minor frustrations (a block structure that will not balance); sulk over being left out.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":264,
+    "title":"",
+    "description":"Imaginary playmates or companions are common; holds conversations and shares strong emotions with this invisible friend.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":265,
+    "title":"",
+    "description":"Boasts, exaggerates, and \"bends\" the truth with made-up stories or claims of boldness; tests the limits with \"bathroom\" talk.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":266,
+    "title":"",
+    "description":"Cooperates with others; participates in group activities.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":267,
+    "title":"",
+    "description":"Shows pride in accomplishments; seeks frequent adult approval.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":268,
+    "title":"",
+    "description":"Often appears selfish; not always able to take turns or to understand taking turns under some conditions; tattles on other children.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":269,
+    "title":"",
+    "description":"Insists on trying to do things independently, but may get so frustrated as to verge on tantrums when problems arise: paint that drips, paper airplane that will not fold right.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":270,
+    "title":"",
+    "description":"Enjoys role-playing and make-believe activities.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":271,
+    "title":"",
+    "description":"Relies (most of the time) on verbal rather than Physical aggression; may yell angrily rather than hit to make a point; threatens: \"You can't come to my birthday party\"",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":272,
+    "title":"",
+    "description":"Name-calling and taunting are often used as ways of excluding other children.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":273,
+    "title":"",
+    "description":"Establishes close relationships with playmates; beginning to have \"best\" friends.",
+    "developmentalAge":48,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":274,
+    "title":"",
+    "description":"Vocabulary of 1,500 words plus.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":275,
+    "title":"",
+    "description":"Tells a familiar story while looking at pictures in a book.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":276,
+    "title":"",
+    "description":"Defines simple words by function: a ball is to bounce; a bed is to sleep in.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":277,
+    "title":"",
+    "description":"Identifies and names four to eight colours.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":278,
+    "title":"",
+    "description":"Recognizes the humor in simple jokes; makes up jokes and riddles.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":279,
+    "title":"",
+    "description":"Produces sentences with five to seven words; much longer sentences are not unusual.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":280,
+    "title":"",
+    "description":"States the name of own city or town, birthday, and parents' names.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":281,
+    "title":"",
+    "description":"Answers telephone appropriately; calls person to phone or takes a brief message",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":282,
+    "title":"",
+    "description":"Speech is almost entirely grammatically correct.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":283,
+    "title":"",
+    "description":"Uses \"would\" and \"could\" appropriately.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":284,
+    "title":"",
+    "description":"Uses past tense of irregular verbs consistently: \"went,\" \"caught,\" \"swam.\"",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":285,
+    "title":"",
+    "description":"Uses past-tense inflection (-ed) appropriately to mark regular verbs: \"jumped,\" \"rained,\" \"washed.\"",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":286,
+    "title":"",
+    "description":"Enjoys and often has one or two focus friendships.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":287,
+    "title":"",
+    "description":"Plays cooperatively (can lapse), is generous, takes turns, shares toys.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":288,
+    "title":"",
+    "description":"Participates in group play and shared activities with other children; suggests imaginative and elaborate play ideas.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":289,
+    "title":"",
+    "description":"Shows affection and caring towards others especially those “below” them or in pain",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":290,
+    "title":"",
+    "description":"Generally subservient to parent or caregiver requests.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":291,
+    "title":"",
+    "description":"Needs comfort and reassurance from adults but is less open to comfort.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":292,
+    "title":"",
+    "description":"Has better self-control over swings of emotions.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":293,
+    "title":"",
+    "description":"Likes entertaining people and making them laugh.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":294,
+    "title":"",
+    "description":"Boasts about accomplishments.",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":295,
+    "title":"",
+    "description":"Often has an imaginary friend",
+    "developmentalAge":60,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":296,
+    "title":"",
+    "description":"Can identify right and left hands fairly consistently.",
     "developmentalAge":72,
     "developmentalAgeRange":12,
     "dependencies":"",
-    "categories":"Motor"
+    "categories":"Language"
+  },
+  {
+    "skillId":297,
+    "title":"",
+    "description":"Holds onto positive beliefs involving the unexplainable (magic or fantasy)",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":298,
+    "title":"",
+    "description":"Arrives at some understanding about death and dying; expresses fear that parents may die.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":299,
+    "title":"",
+    "description":"Talks a lot.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":300,
+    "title":"",
+    "description":"Loves telling jokes and riddles; often, the humor is far from subtle.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":301,
+    "title":"",
+    "description":"Experiments with slang and profanity and finds it funny.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":302,
+    "title":"",
+    "description":"Enthusiastic and inquisitive about surroundings and everyday events.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":303,
+    "title":"",
+    "description":"Able to carry on adult-like conversations; asks many questions.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":304,
+    "title":"",
+    "description":"Learns 5 to 10 words a day; vocabulary of 10,000–14,000.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":305,
+    "title":"",
+    "description":"Uses appropriate verb tenses, word order, and sentence structure.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Language"
+  },
+  {
+    "skillId":306,
+    "title":"",
+    "description":"Uses language rather than tantrums or physical aggression to express displeasure: \"That's mine! Give it back, you dummy.\"",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":307,
+    "title":"",
+    "description":"Talks self through steps required in simple problem-solving situations (though the \"logic\" may be unclear to adults).",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":308,
+    "title":"",
+    "description":"Has mood swings towards primary caregiver depending on the day",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":309,
+    "title":"",
+    "description":"Friendship with parent is less depended on but still needs closeness and nurturing.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":310,
+    "title":"",
+    "description":"Anxious to please; needs and seeks adult approval, reassurance, and praise; may complain excessively about minor hurts to gain more attention.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":311,
+    "title":"",
+    "description":"Often can't view the world from another’s point of view",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":312,
+    "title":"",
+    "description":"Self-perceived failure can make the child easily disappointed and frustrated.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":313,
+    "title":"",
+    "description":"Can't handle things not going their own way",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":314,
+    "title":"",
+    "description":"Does not understand ethical behavior or moral standards especially when doing things that have not been given rules",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":315,
+    "title":"",
+    "description":"Understands when he or she has been thought to be \"bad\"; values are based on others' enforced values.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
+  },
+  {
+    "skillId":316,
+    "title":"",
+    "description":"May be increasingly fearful of the unknown like things in the dark, noises, and animals.",
+    "developmentalAge":72,
+    "developmentalAgeRange":12,
+    "dependencies":"",
+    "categories":"Social"
   }
 ]

@@ -1,8 +1,23 @@
 
+timelineHeight = 50px
+
+.home {
+  box-sizing: content-box
+  padding-bottom: timelineHeight
+  position: relative
+}
+
+.category {
+  color: white
+  font-size: 160px
+  padding: 6px 0
+  text-shadow: 0 0 2px white
+}
+
 .skill {
   absolute: top left
-  background: #e6ecf0
-  border: 1px solid #87AFC7
+  background: rgba(255, 255, 255, 0.6)
+  border: 1px solid rgba(0, 0, 0, 0.3)
   border-radius: 2px
   color: black
   overflow: hidden
@@ -11,17 +26,45 @@
   text-overflow: ellipsis
   whitespace: nowrap
 
-  &:active, &:focus {
+  &:hover, &.active {
+    box-shadow: 0px 0px 40px white
     border-color: #7793A8
+    text-decoration: none
+    background: rgba(255, 255, 255, 0.9)
+  }
+
+  &.dependency {
+    box-shadow: 0 0 20px white
+    background: rgba(255, 255, 255, 0.75)
+  }
+
+  &.hide-dependency {
+    background: rgba(255, 255, 255, 0.3)
   }
 }
 
-.skill:hover {
-  box-shadow: 0px 0px 20px #fff
-  text-decoration: none
+.timeline {
+  color: white
+  background: #2B2B2B
+  absolute: bottom left
+  height: timelineHeight
+  position: fixed
+  width: 100%
 }
 
-.dependency {
-  box-shadow: 0 0 20px gold
+.timelineNotch {
+  absolute: bottom left
+  background: white
+  height: 20px
+  width: 2px
+}
+
+.year {
+  absolute: bottom left
+  background: white
+  height: 100%
+  width: 4px
+
+  margin-left: -(@width / 2)
 }
 

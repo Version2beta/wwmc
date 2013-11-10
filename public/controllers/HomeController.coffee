@@ -1,27 +1,30 @@
-fixupSkills = (skills) ->
-  if !Array.isArray skills
-    return skills.id = skills._id
-  skills.forEach (s) ->
-    s.id = s._id
-  skills
+categoryColors = [
+  "#DFEF8F"
+  "#8FEF95"
+  "#EFBA8F"
+  "#EF9A8F"
+  "#EF8FB5"
+]
 
+layoutSkills = ($scope, {hScale, vScale, topPadding, hPadding}) ->
 
-# on hover, expand
-layoutSkills = (skills) ->
-  windowWidth = $(window).width()
-  windowHeight = $(window).height()
+  $scope.skillsHeight = 0
+  $scope.skillsWidth = 0
 
-  # width of screen is 4 years
-  hScale = windowWidth / (12 * 4)
-  vScale = 36
+  categories = []
 
-  rows = [{
-    skills: []
-  }]
+  for skill in $scope.skills
+    category = _.find categories, (category) ->
+      category.name == skill.categories
 
-  for skill in skills
+    if !category
+      category = { name: skill.categories, rows: [] }
+      categories.push category
+
+    rows = category.rows
+
     # find the first row this skill can fit in
-    rowIndex = _.findIndex rows, (row) ->
+    row = _.find rows, (row) ->
       for rowSkill in row.skills
         skillEnd = skill.developmentalAge + skill.developmentalAgeRange
         rowSkillEnd = rowSkill.developmentalAge + rowSkill.developmentalAgeRange
@@ -44,44 +47,102 @@ layoutSkills = (skills) ->
       return true
 
     # add another row if we can't fit in any existing rows
-    if rowIndex == -1
-      row = {
-        skills: []
-      }
+    if !row
+      row = { skills: [] }
       rows.push row
-      rowIndex = rows.length - 1
-    else
-      row = rows[rowIndex]
 
     row.skills.push skill
 
-    width = skill.developmentalAgeRange * hScale
-    skill.layout = {
-      width: width + 'px'
-      left: ((skill.developmentalAge - 1) * hScale) + 'px'
-      row: rowIndex
-      top: (rowIndex * vScale) + 'px'
+  rowIndex = 0
+  for category in categories
+    for row in category.rows
+      for skill in row.skills
+        width = skill.developmentalAgeRange * hScale
+        top = rowIndex * vScale + topPadding
+        left = skill.developmentalAge * hScale + hPadding
+        skill.layout = {
+          width: width + 'px'
+          left: left + 'px'
+          row: rowIndex
+          top: top + 'px'
+        }
+
+        $scope.skillsHeight = Math.max (top + vScale - topPadding), $scope.skillsHeight
+        $scope.skillsWidth = Math.max (left + width + hPadding), $scope.skillsWidth
+
+      rowIndex++
+
+  $scope.categories = categories.map (category, i) ->
+    {
+      name: category.name
+      height: category.rows.length * vScale
+      backgroundColor: categoryColors[i]
     }
 
-window.HomeCtrl = ($scope, $http) ->
+layoutTimeline = ($scope, {hScale, vScale, maxMonth, topPadding, hPadding}) ->
+  $scope.timelineNotches = for month in [0..maxMonth] by 3
+    {
+      month
+      left: (hScale * month + hPadding) + 'px'
+    }
+
+window.HomeCtrl = ($scope, skills) ->
+  $scope.skills = skills
+
   reLayout = ->
-    return if !$scope.skills
-    layoutSkills $scope.skills
+    windowWidth = $(window).width()
+    # width of screen is 4 years
+    hScale = windowWidth / (12 * 4)
+    vScale = 36
+    topPadding = 40
+    hPadding = 16
+
+    $scope.vScale = vScale
+    $scope.hScale = hScale
+
+    layoutSkills $scope, {
+      hScale
+      vScale
+      topPadding
+      hPadding
+    }
+
+    maxSkill = _.max $scope.skills, (skill) ->
+      skill.developmentalAge + skill.developmentalAgeRange
+
+    maxMonth = maxSkill.developmentalAge + maxSkill.developmentalAgeRange
+    maxYear = Math.floor maxMonth / 12
+
+    $scope.years = [0..maxYear].map (year) ->
+      {
+        year
+        left: (hScale * 12 * year + hPadding) + 'px'
+      }
+
+    layoutTimeline $scope, {
+      hScale
+      vScale
+      topPadding
+      hPadding
+      maxMonth
+    }
+
   reLayout()
-
-  console.log 'getting all skills'
-  $http.get('/skills').then (data) ->
-    console.log 'fixing up skills'
-    $scope.skills = fixupSkills data.data
-    reLayout()
-
   $(window).on 'resize', ->
     $scope.$apply reLayout
 
+
   $scope.showDependencies = (skill) ->
-    s.dependency = "dependency" for s in $scope.skills when s._id in (skill.dependencies or [])
+    skill.active = "active"
+    for s in $scope.skills
+      if s._id in (skill.dependencies or [])
+        s.dependency = "dependency"
+        $scope.showDependencies(s)
+      else
+        s.dependency = "hide-dependency" if not s.active
+        #s.dependency = "dependency" for s in $scope.skills when s._id in (skill.dependencies or [])
 
   $scope.hideDependencies = ->
-    return if !$scope.skills
     for s in $scope.skills
+      delete s.active
       delete s.dependency

@@ -1,7 +1,14 @@
-<section ng-controller="HomeCtrl" class="home">
-  <a href="/skills/{{skill.id}}" ng-repeat="skill in skills" class="skill {{skill.dependency}}"
-  ng-class="{{skill.dependencies}}" ng-mouseenter="showDependencies(skill)"
-  ng-mouseleave="hideDependencies()" ng-style="skill.layout"
-  title="{{skill.title}}">{{skill.title}}</a>
-<section ui-view></section>
+<section class="home" style="height: {{skillsHeight}}px">
+  <div class="category" ng-repeat="category in categories" ng-style="category" style="width: {{skillsWidth}}px">{{category.name}}</div>
+  <div class="year" ng-repeat="year in years" ng-style="year"></div>
+  <a href="/skills/{{skill.id}}" ng-repeat="skill in skills" id="{{skill.id}}"
+    class="skill {{skill.dependency}} {{skill.active}}"
+    ng-class="{{skill.dependencies}}" ng-mouseenter="showDependencies(skill)"
+    ng-mouseleave="hideDependencies()" ng-style="skill.layout"
+    title="{{skill.title}}" on-tap="hideDependencies(); showDependencies(skill);"
+    on-hold="open(skill)">{{skill.title}}</a>
+  <nav class="timeline" style="width: {{skillsWidth}}px" scroll-with-page>
+    <div class="timelineNotch {{(notch.month % 12 == 0) ? 'year' : ''}}" ng-repeat="notch in timelineNotches" ng-style="notch"></div>
+  </nav>
+  <section class="skill-sidebar" ui-view></section>
 </section>
