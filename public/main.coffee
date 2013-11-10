@@ -1,4 +1,4 @@
-isDebug = -> true
+isDebug = -> false
 
 fixupSkills = (skills) ->
   skills.forEach (s) ->
