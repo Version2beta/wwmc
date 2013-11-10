@@ -86,10 +86,11 @@ layoutTimeline = ($scope, {hScale, vScale, maxMonth, topPadding, hPadding}) ->
       left: (hScale * month + hPadding) + 'px'
     }
 
-window.HomeCtrl = ($scope, $http, $modal) ->
+window.HomeCtrl = ($scope, skills) ->
+  $scope.skills = skills
+
   reLayout = ->
     windowWidth = $(window).width()
-
     # width of screen is 4 years
     hScale = windowWidth / (12 * 4)
     vScale = 36
@@ -105,7 +106,6 @@ window.HomeCtrl = ($scope, $http, $modal) ->
       topPadding
       hPadding
     }
-
 
     maxSkill = _.max $scope.skills, (skill) ->
       skill.developmentalAge + skill.developmentalAgeRange
@@ -127,25 +127,10 @@ window.HomeCtrl = ($scope, $http, $modal) ->
       maxMonth
     }
 
+  reLayout()
   $(window).on 'resize', ->
     $scope.$apply reLayout
 
-
-  $http.get('/skills')
-    .success (skills) ->
-      $scope.skills = skills
-      reLayout()
-    .error (err) ->
-      alert "Error loading skills: #{err}"
-
-  $scope.open = (datas) ->
-    $modal.open {
-      templateUrl: 'views/modal.html'
-      controller: ModalCtrl
-      resolve: {
-        data: -> return datas
-      }
-    }
 
   $scope.showDependencies = (skill) ->
     skill.active = "active"

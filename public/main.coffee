@@ -1,9 +1,36 @@
-angular.module('wwmc', ['ngRoute', 'ui.bootstrap']).config ['$routeProvider', '$locationProvider', ($routeProvider, $locationProvider) ->
-  $routeProvider.when '/',
-    templateUrl: 'views/home.html'
+fixupSkills = (skills) ->
+  skills.forEach (s) ->
+    s.id = s._id
+  skills
 
-  $routeProvider.otherwise redirectTo: '/'
-  $locationProvider.html5Mode true
+angular.module('wwmc', ['ui.router']).config [
+  '$stateProvider',
+  '$urlRouterProvider',
+  '$locationProvider',
+  ($stateProvider, $urlRouterProvider, $locationProvider) ->
+    $stateProvider.state('skills', {
+      url: '/skills'
+      templateUrl: 'views/home.html'
+      resolve: {
+        skills: ($http) ->
+          $http.get('/skills').then (data) ->
+            fixupSkills data.data
+      }
+      controller: HomeCtrl
+    }).state('skills.detail', {
+      url: '/:id'
+      templateUrl: '/views/skill_detail.html'
+      controller: ($scope, $http, $stateParams) ->
+        $http.get('/skills/' + $stateParams.id).then (data) ->
+          $scope.skill = data.data[0]
+          $scope.skill.id = $scope.skill._id
+    }).state('welcome', {
+      url: '/welcome'
+      templateUrl: 'views/welcome.html'
+    })
+
+    $urlRouterProvider.otherwise 'skills'
+    $locationProvider.html5Mode true
 ]
 
 angular.module('wwmc').directive 'scrollWithPage', ($document) ->
