@@ -1,4 +1,5 @@
-var categoryColors, layoutSkills, layoutTimeline;
+var categoryColors, layoutSkills, layoutTimeline,
+  __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
 
 categoryColors = ["#DFEF8F", "#8FEF95", "#EFBA8F", "#EF9A8F", "#EF8FB5"];
 
@@ -98,10 +99,8 @@ layoutTimeline = function($scope, _arg) {
 };
 
 window.HomeCtrl = function($scope, skills) {
-  var drawDependencies, highlightedDependencies, reLayout, skillsById;
+  var debounce, reLayout;
   $scope.skills = skills;
-  skillsById = _.indexBy(skills, 'id');
-  highlightedDependencies = [];
   reLayout = function() {
     var hPadding, hScale, maxMonth, maxSkill, maxYear, topPadding, vScale, windowWidth, _i, _results;
     windowWidth = $(window).width();
@@ -144,65 +143,79 @@ window.HomeCtrl = function($scope, skills) {
   $(window).on('resize', function() {
     return $scope.$apply(reLayout);
   });
-  $scope.open = function(skill) {
-    var s, _i, _len, _ref;
-    if (skill.detail !== "detail") {
-      $scope.showDependencies(skill);
-      _ref = $scope.skills;
-      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        s = _ref[_i];
-        s.detail = null;
-      }
-      skill.detail = "detail";
-    }
-    return false;
-  };
-  $scope.close = function(skill) {
-    console.log(skill);
-    skill.detail = null;
-    return $scope.hideDependencies(skill);
-  };
-  $scope.showDependenciesOrOpen = function(skill) {
-    if (skill.active) {
-      return $scope.open(skill);
-    } else {
-      $scope.hideDependencies(skill);
-      return $scope.showDependencies(skill);
-    }
-  };
-  drawDependencies = function(skill, depth) {
-    var dependencies, dependency, _i, _len;
-    if (depth == null) {
-      depth = 0;
-    }
-    if (depth > 10) {
+  $scope.logs = [];
+  $scope.log = function(what) {
+    if (!isDebug()) {
       return;
     }
-    dependencies = (skill.dependencies || []).map(function(id) {
-      return skillsById[id];
-    });
-    for (_i = 0, _len = dependencies.length; _i < _len; _i++) {
-      dependency = dependencies[_i];
-      dependency.dependency = "dependency";
-      dependencies = dependencies.concat(drawDependencies(dependency, depth));
+    console.log(what);
+    $scope.logs.push(what);
+    return $scope.notice = $scope.logs.slice(-10).reverse();
+  };
+  $scope.debounce = null;
+  debounce = function() {
+    $scope.debounce = true;
+    return setTimeout((function() {
+      return $scope.debounce = null;
+    }), 500);
+  };
+  $scope.open = function(ev, skill) {
+    if ($scope.debounce) {
+      return;
     }
-    return dependencies;
+    $scope.log("open");
+    return skill.state = "detail";
   };
-  $scope.showDependencies = function(skill) {
-    skill.active = "active";
-    highlightedDependencies = drawDependencies(skill);
-    highlightedDependencies.push(skill);
-    return $scope.showHideDependencies = "hide-dependencies";
+  $scope.close = function(ev, skill) {
+    $scope.log("close");
+    debounce();
+    return skill.state = "active";
   };
-  return $scope.hideDependencies = function() {
-    var dep, _results;
-    $scope.showHideDependencies = "";
+  $scope.showDependenciesOrOpen = function(ev, skill) {
+    $scope.log("showDependenciesOrOpen " + skill.state);
+    if (skill.state === "detail") {
+      return;
+    }
+    if (skill.state === "active") {
+      return $scope.open(ev, skill);
+    } else {
+      debounce();
+      $scope.clear(ev, skill);
+      return $scope.showDependencies(ev, skill);
+    }
+  };
+  $scope.showDependencies = function(ev, skill) {
+    var s, _i, _len, _ref, _ref1, _results;
+    $scope.log("showDependencies");
+    skill.state = "active";
+    _ref = $scope.skills;
     _results = [];
-    while (dep = highlightedDependencies.pop()) {
-      dep.active = null;
-      dep.detail = null;
-      _results.push(dep.dependency = null);
+    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+      s = _ref[_i];
+      if (_ref1 = s._id, __indexOf.call(skill.dependencies || [], _ref1) >= 0) {
+        s.state = "dependency";
+        _results.push($scope.showDependencies(ev, s));
+      } else {
+        if (!s.state === "active") {
+          _results.push(s.state = "hide-dependency");
+        } else {
+          _results.push(void 0);
+        }
+      }
     }
     return _results;
+  };
+  return $scope.clear = function(ev, skill) {
+    var s, _i, _len, _ref, _results;
+    $scope.log("clear");
+    if (!(skill != null ? skill.state : void 0)) {
+      _ref = $scope.skills;
+      _results = [];
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        s = _ref[_i];
+        _results.push(s.state = null);
+      }
+      return _results;
+    }
   };
 };
