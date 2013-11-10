@@ -1,6 +1,14 @@
 
 timelineHeight = 50px
 
+.topBar {
+  background: black
+  color: white
+  fixed: top left
+  height: 40px
+  width: 100%
+}
+
 .home {
   box-sizing: content-box
   padding-bottom: timelineHeight
@@ -8,7 +16,7 @@ timelineHeight = 50px
 }
 
 .category {
-  padding: 6px 0
+  top: 40px
   position: relative
 
   .categoryText {
@@ -20,6 +28,10 @@ timelineHeight = 50px
     transform: rotate(-90deg)
     transform-origin: top left
     width: 250px
+  }
+
+  &:first-of-type .categoryText {
+    top: 300px
   }
 }
 
