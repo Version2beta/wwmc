@@ -388,7 +388,7 @@
   },
   {
     "skillId":44,
-    "title":"Cognitive?",
+    "title":"Follows simple instructions.",
     "description":"Follows simple instructions.",
     "developmentalAge":9,
     "developmentalAgeRange":3,
@@ -986,7 +986,7 @@
     "description":"Paints and draws with purpose; may have an idea in mind, but often has problems implementing it so calls the creation something else.",
     "developmentalAge":48,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"74",
     "categories":"Motor"
   },
   {
@@ -1022,7 +1022,7 @@
     "description":"Walks backwards, toe to heel.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"65",
     "categories":"Motor"
   },
   {
@@ -1112,7 +1112,7 @@
     "description":"Builds three-dimensional structures with small cubes by copying from a picture or model.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"106",
     "categories":"Motor"
   },
   {
@@ -1198,7 +1198,7 @@
   },
   {
     "skillId":134,
-    "title":"Cognitive?",
+    "title":"Can concentrate effort but not always consistently.",
     "description":"Can concentrate effort but not always consistently.",
     "developmentalAge":72,
     "developmentalAgeRange":12,
@@ -1207,38 +1207,38 @@
   },
   {
     "skillId":135,
-    "title":"Cognitive?",
+    "title":"Understands time relative to today",
     "description":"Understands time (today, tomorrow, yesterday) and simple motion (things go faster than others).",
     "developmentalAge":72,
-    "developmentalAgeRange":12,
+    "developmentalAgeRange":3,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":136,
-    "title":"Cognitive?",
+    "title":"Recognizes seasons",
     "description":"Recognizes seasons and major activities done in the times.",
-    "developmentalAge":72,
-    "developmentalAgeRange":12,
+    "developmentalAge":75,
+    "developmentalAgeRange":9,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":137,
-    "title":"Cognitive?",
+    "title":"Enjoys problem solving",
     "description":"Has fun with problem solving and sorting activities like stacking, puzzles and mazes",
     "developmentalAge":72,
-    "developmentalAgeRange":12,
+    "developmentalAgeRange":3,
     "dependencies":"",
     "categories":"Motor"
   },
   {
     "skillId":138,
-    "title":"Cognitive?",
+    "title":"Enjoys the challenge of puzzles",
     "description":"Enjoys the challenge of puzzles, counting and sorting activities, paper-and-pencil mazes, and games that involve matching letters and words with pictures.",
-    "developmentalAge":72,
-    "developmentalAgeRange":12,
-    "dependencies":"",
+    "developmentalAge":75,
+    "developmentalAgeRange":9,
+    "dependencies":"137",
     "categories":"Motor"
   },
   {
@@ -1292,7 +1292,7 @@
     "description":"Able to trace objects.",
     "developmentalAge":72,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"110",
     "categories":"Motor"
   },
   {
@@ -1315,7 +1315,7 @@
   },
   {
     "skillId":147,
-    "title":"Enjoys object-hiding activites",
+    "title":"Enjoys object-hiding activities",
     "description":"Enjoys object-hiding activities.",
     "developmentalAge":12,
     "developmentalAgeRange":12,
@@ -1334,9 +1334,9 @@
   {
     "skillId":149,
     "title":"Passes objects between hands when offered additional item",
-    "description":"Passes toy to other hand when offered a second object (referred to as \"crossing the midline\" – an important neurological development).",
+    "description":"Passes toy to other hand when offered a second object (referred to as \"crossing the mid-line\" – an important neurological development).",
     "developmentalAge":12,
-    "developmentalAgeRange":12,
+    "developmentalAgeRange":3,
     "dependencies":"30",
     "categories":"Cognitive"
   },
@@ -1344,8 +1344,8 @@
     "skillId":150,
     "title":"Manages holding three or more objects by placing original item aside",
     "description":"Manages three to four objects by setting an object aside (on lap or floor) when presented with a new toy.",
-    "developmentalAge":12,
-    "developmentalAgeRange":12,
+    "developmentalAge":15,
+    "developmentalAgeRange":9,
     "dependencies":"149",
     "categories":"Cognitive"
   },
@@ -1560,9 +1560,9 @@
     "skillId":174,
     "title":"Reads books by explaining pictures",
     "description":"Likes to look at books and may pretend to \"read\" to others or explain pictures.",
-    "developmentalAge":36,
-    "developmentalAgeRange":12,
-    "dependencies":"",
+    "developmentalAge":45,
+    "developmentalAgeRange":3,
+    "dependencies":"176,177,178",
     "categories":"Cognitive"
   },
   {
@@ -1579,7 +1579,7 @@
     "title":"Speaks in an understandable manner",
     "description":"Speech is understandable most of the time.",
     "developmentalAge":36,
-    "developmentalAgeRange":12,
+    "developmentalAgeRange":9,
     "dependencies":"",
     "categories":"Cognitive"
   },
@@ -1588,7 +1588,7 @@
     "title":"Uses expanded noun phrases",
     "description":"Produces expanded noun phrases: \"big, brown dog.\"",
     "developmentalAge":36,
-    "developmentalAgeRange":12,
+    "developmentalAgeRange":9,
     "dependencies":"",
     "categories":"Cognitive"
   },
@@ -1597,7 +1597,7 @@
     "title":"Creates verbs and plural nouns",
     "description":"Produces verbs with \"ing\" endings; uses \"-s\" to indicate more than one; often puts \"-s\" on already pluralized forms: geeses, mices.",
     "developmentalAge":36,
-    "developmentalAgeRange":12,
+    "developmentalAgeRange":9,
     "dependencies":"",
     "categories":"Cognitive"
   },
@@ -1652,7 +1652,7 @@
     "description":"A few children are beginning to read simple books, such as alphabet books with only a few words per page and many pictures.",
     "developmentalAge":48,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"140",
     "categories":"Cognitive"
   },
   {
@@ -1733,7 +1733,7 @@
     "description":"follows two to three step directions given individually or in a group",
     "developmentalAge":48,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"217",
     "categories":"Cognitive"
   },
   {
@@ -1814,7 +1814,7 @@
     "description":"Rote counts to 20 and above; many children count to 100.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"188",
     "categories":"Cognitive"
   },
   {
@@ -1921,7 +1921,7 @@
     "title":"Produces \"jargon\"",
     "description":"Produces considerable \"jargon\": puts words and sounds together into speech-like (inflected) patterns.",
     "developmentalAge":12,
-    "developmentalAgeRange":12,
+    "developmentalAgeRange":3,
     "dependencies":"",
     "categories":"Language"
   },
@@ -1929,8 +1929,8 @@
     "skillId":215,
     "title":"Holophrastic Speech",
     "description":"Holophrastic speech: uses one word to convey an entire thought; meaning depends on the inflection (\"me\" may be used to request more cookies or a desire to feed self). ",
-    "developmentalAge":12,
-    "developmentalAgeRange":12,
+    "developmentalAge":15,
+    "developmentalAgeRange":3,
     "dependencies":"214",
     "categories":"Language"
   },
@@ -1938,8 +1938,8 @@
     "skillId":216,
     "title":"Telegraphic Speech",
     "description":"Produces two-word phrases to express a complete thought (telegraphic speech): \"More cookie,\" \"Daddy bye-bye.\"",
-    "developmentalAge":12,
-    "developmentalAgeRange":12,
+    "developmentalAge":18,
+    "developmentalAgeRange":3,
     "dependencies":"215",
     "categories":"Language"
   },
@@ -1949,7 +1949,7 @@
     "description":"Follows simple directions, \"Give Daddy the cup.\"",
     "developmentalAge":12,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"44",
     "categories":"Language"
   },
   {
@@ -1974,17 +1974,17 @@
     "skillId":220,
     "title":"Verbally indicates desired objects and activities",
     "description":"Indicates a few desired objects and activities by name: \"Bye-bye,\" \"cookie\"; verbal request is often accompanied by an insistent gesture.",
-    "developmentalAge":12,
-    "developmentalAgeRange":12,
-    "dependencies":"",
+    "developmentalAge":18,
+    "developmentalAgeRange":3,
+    "dependencies":"215",
     "categories":"Language"
   },
   {
     "skillId":221,
     "title":"Responds verbally and with head movement to \"yes\" or \"no\" questions",
     "description":"Responds to simple questions with \"yes\" or \"no\" and appropriate head movement.",
-    "developmentalAge":12,
-    "developmentalAgeRange":12,
+    "developmentalAge":18,
+    "developmentalAgeRange":3,
     "dependencies":"",
     "categories":"Language"
   },
@@ -2030,7 +2030,7 @@
     "description":"Enjoys rhymes and songs; tries to join in.",
     "developmentalAge":12,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"181",
     "categories":"Language"
   },
   {
@@ -2125,7 +2125,7 @@
   },
   {
     "skillId":237,
-    "title":"",
+    "title":"Some stammering and other dysfluencies are common.",
     "description":"Some stammering and other dysfluencies are common.",
     "developmentalAge":24,
     "developmentalAgeRange":12,
@@ -2137,7 +2137,7 @@
     "title":"Speech is 65% - 70% intelligible",
     "description":"Speech is as much as 65 to 70 percent intelligible.",
     "developmentalAge":24,
-    "developmentalAgeRange":12,
+    "developmentalAgeRange":3,
     "dependencies":"222",
     "categories":"Language"
   },
@@ -2146,7 +2146,7 @@
     "title":"Able to verbalize needs",
     "description":"Is able to verbalize needs.",
     "developmentalAge":24,
-    "developmentalAgeRange":12,
+    "developmentalAgeRange":3,
     "dependencies":"",
     "categories":"Language"
   },
@@ -2172,9 +2172,9 @@
     "skillId":242,
     "title":"Reduced physical aggression",
     "description":"Continues to use physical aggression if frustrated or angry (for some children, this is more exaggerated than for others); Physical aggression usually lessens as verbal skills improve.",
-    "developmentalAge":24,
-    "developmentalAgeRange":12,
-    "dependencies":"238",
+    "developmentalAge":27,
+    "developmentalAgeRange":9,
+    "dependencies":"238,239",
     "categories":"Social"
   },
   {
@@ -2201,12 +2201,12 @@
     "description":"Enjoys \"helping\" with household chores; imitates everyday activities: may try to toilet train a stuffed animal, feed a doll.",
     "developmentalAge":24,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"48",
     "categories":"Social"
   },
   {
     "skillId":246,
-    "title":"\"Bossy\" with parents and caregives",
+    "title":"\"Bossy\" with parents and caregivers",
     "description":"Bossy with parents and caregivers; orders them around, makes demands, expects immediate compliance from adults.",
     "developmentalAge":24,
     "developmentalAgeRange":12,
@@ -2219,7 +2219,7 @@
     "description":"Watches and imitates the play of other children, but seldom interacts directly; plays near others, often choosing similar toys and activities (parallel play);solitary play is often simple and repetitive.",
     "developmentalAge":24,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"48",
     "categories":"Social"
   },
   {
@@ -2228,7 +2228,7 @@
     "description":"Offers toys to other children, but is usually possessive of playthings; still tends to hoard toys.",
     "developmentalAge":24,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"154",
     "categories":"Social"
   },
   {
@@ -2305,7 +2305,7 @@
   },
   {
     "skillId":257,
-    "title":"Uses past tense of verbs correctly",
+    "title":"Begins to use past tense of verbs",
     "description":"Begins to use the past tense of verbs correctly: \"Mommy closed the door,\" \"Daddy went to work.\"",
     "developmentalAge":48,
     "developmentalAgeRange":12,
@@ -2341,7 +2341,7 @@
   },
   {
     "skillId":261,
-    "title":"",
+    "title":"Answers situational questions",
     "description":"Answers appropriately when asked what to do if tired, cold, or hungry. Recites and sings simple songs like mangoes and rhymes.",
     "developmentalAge":48,
     "developmentalAgeRange":12,
@@ -2390,7 +2390,7 @@
     "description":"Cooperates with others; participates in group activities.",
     "developmentalAge":48,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"247",
     "categories":"Social"
   },
   {
@@ -2462,7 +2462,7 @@
     "description":"Vocabulary of 1,500 words plus.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"230",
     "categories":"Language"
   },
   {
@@ -2552,7 +2552,7 @@
     "description":"Uses past tense of irregular verbs consistently: \"went,\" \"caught,\" \"swam.\"",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"257",
     "categories":"Language"
   },
   {
@@ -2561,7 +2561,7 @@
     "description":"Uses past-tense inflection (-ed) appropriately to mark regular verbs: \"jumped,\" \"rained,\" \"washed.\"",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"257",
     "categories":"Language"
   },
   {
@@ -2579,7 +2579,7 @@
     "description":"Plays cooperatively (can lapse), is generous, takes turns, shares toys.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"248",
     "categories":"Social"
   },
   {
@@ -2588,7 +2588,7 @@
     "description":"Participates in group play and shared activities with other children; suggests imaginative and elaborate play ideas.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"266",
     "categories":"Social"
   },
   {
@@ -2696,7 +2696,7 @@
     "description":"Loves telling jokes and riddles; often, the humor is far from subtle.",
     "developmentalAge":72,
     "developmentalAgeRange":12,
-    "dependencies":"293",
+    "dependencies":"293,278",
     "categories":"Language"
   },
   {
@@ -2741,7 +2741,7 @@
     "description":"Uses appropriate verb tenses, word order, and sentence structure.",
     "developmentalAge":72,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"285,284,178",
     "categories":"Language"
   },
   {
