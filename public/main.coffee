@@ -17,9 +17,9 @@ angular.module('wwmc', ['ui.router']).config [
             fixupSkills data.data
       }
       controller: HomeCtrl
-    }).state('skills.slider', {
+    }).state('skills.detail', {
       url: '/:id'
-      templateUrl: '/views/slider.html'
+      templateUrl: '/views/skill_detail.html'
       controller: ($scope, $http, $stateParams) ->
         $http.get('/skills/' + $stateParams.id).then (data) ->
           $scope.skill = data.data[0]
