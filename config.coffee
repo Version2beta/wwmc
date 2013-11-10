@@ -2,7 +2,7 @@
 require('nko')('cgtyi6pwUp5CEM0E')
 mongoose = require 'mongoose'
 
-dbHost = process.env.DB_HOST ? 'wwmc.2013.nodeknockout.com'
+dbHost = process.env.DB_HOST ? 'localhost'
 
 mongoose.connect "mongodb://#{dbHost}:27017/wwmc"
 
