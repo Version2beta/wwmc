@@ -8,10 +8,27 @@ reset-html5()
   box-sizing: border-box
 }
 
+html {
+  // we will always have anough content to make it scroll, show scrollbars so page doesnt shift once content loads
+  overflow: scroll
+}
+
 html, body {
-  background: #D4D4D4
+  background: #E6ECF0
   font-family: Noto Sans, sans-serif
   line-height: 1.6em
+}
+
+h3 {
+  font-size: 22px
+}
+
+strong {
+  font-weight: bold
+}
+
+p {
+  margin: 8px 0
 }
 
 @import "../views/home"

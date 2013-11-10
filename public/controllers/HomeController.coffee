@@ -87,8 +87,11 @@ layoutTimeline = ($scope, {hScale, vScale, maxMonth, topPadding, hPadding}) ->
       left: (hScale * month + hPadding) + 'px'
     }
 
-window.HomeCtrl = ($scope, skills) ->
-  $scope.skills = skills
+window.HomeCtrl = ($scope, $http) ->
+
+  $http.get('/skills').success (skills) ->
+    $scope.skills = skills
+    reLayout()
 
   reLayout = ->
     windowWidth = $(window).width()
@@ -128,7 +131,6 @@ window.HomeCtrl = ($scope, skills) ->
       maxMonth
     }
 
-  reLayout()
   $(window).on 'resize', ->
     $scope.$apply reLayout
 

@@ -98,9 +98,12 @@ layoutTimeline = function($scope, _arg) {
   })();
 };
 
-window.HomeCtrl = function($scope, skills) {
+window.HomeCtrl = function($scope, $http) {
   var debounce, reLayout;
-  $scope.skills = skills;
+  $http.get('/skills').success(function(skills) {
+    $scope.skills = skills;
+    return reLayout();
+  });
   reLayout = function() {
     var hPadding, hScale, maxMonth, maxSkill, maxYear, topPadding, vScale, windowWidth, _i, _results;
     windowWidth = $(window).width();
@@ -139,7 +142,6 @@ window.HomeCtrl = function($scope, skills) {
       maxMonth: maxMonth
     });
   };
-  reLayout();
   $(window).on('resize', function() {
     return $scope.$apply(reLayout);
   });

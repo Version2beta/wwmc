@@ -12,22 +12,7 @@ angular.module('wwmc', ['ui.router']).config [
     $stateProvider.state('skills', {
       url: '/skills'
       templateUrl: 'views/home.html'
-      resolve: {
-        skills: ($http) ->
-          $http.get('/skills').then (data) ->
-            fixupSkills data.data
-      }
       controller: HomeCtrl
-    }).state('skills.detail', {
-      url: '/:id'
-      templateUrl: '/views/skill_detail.html'
-      controller: ($scope, $http, $stateParams) ->
-        $http.get('/skills/' + $stateParams.id).then (data) ->
-          $scope.skill = data.data[0]
-          $scope.skill.id = $scope.skill._id
-    }).state('welcome', {
-      url: '/welcome'
-      templateUrl: 'views/welcome.html'
     })
 
     $urlRouterProvider.otherwise 'skills'
