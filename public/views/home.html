@@ -3,14 +3,19 @@
     <span class="categoryText">{{category.name}}</span>
   </div>
   <div class="year" ng-repeat="year in years" ng-style="year"></div>
-<<<<<<< HEAD
-  <div ng-repeat="skill in skills" id="container-{{skill.id}}" class="skill-container">
-  <a href="/#/skills/{{skill.id}}" id="{{skill.id}}"
-    class="skill {{skill.dependency}} {{skill.active}}"
-    ng-class="{{skill.dependencies}}" ng-mouseenter="showDependencies(skill)"
-    ng-mouseleave="hideDependencies()" ng-style="skill.layout"
-    title="{{skill.title}}" on-tap="hideDependencies(); showDependencies(skill);"
-    on-hold="open(skill)">{{skill.title}}</a>
+  <div ng-repeat="skill in skills"
+    id="container-{{skill.id}}"
+    class="skill-container {{skill.dependency}} {{skill.active}} {{skill.detail}}"
+    ng-class="{{skill.dependencies}}"
+    ng-style="skill.layout"
+    ng-mouseenter="showDependencies(skill)"
+    ng-mouseleave="hideDependencies(null)"
+    on-tap="showDependenciesOrOpen(skill)"
+    on-hold="open(skill)"
+    ng-click="open(skill)">
+    <a href="/#/skills/{{skill.id}}" id="{{skill.id}}" class="skill" title="{{skill.title}}">{{skill.title}}</a>
+    <p class="description {{skill.detail}}">{{skill.description}}</p>
+    <p class="detail-close" ng-click="close(skill)">X</p>
   </div>
   <nav class="timeline" style="width: {{skillsWidth}}px" scroll-with-page>
     <div class="timelineNotch {{(notch.month % 12 == 0) ? 'year' : ''}}" ng-repeat="notch in timelineNotches" ng-style="notch"></div>

@@ -62,6 +62,7 @@ layoutSkills = ($scope, {hScale, vScale, topPadding, hPadding}) ->
         left = skill.developmentalAge * hScale + hPadding
         skill.layout = {
           width: width + 'px'
+          height: vScale + 'px'
           left: left + 'px'
           row: rowIndex
           top: top + 'px'
@@ -131,6 +132,25 @@ window.HomeCtrl = ($scope, skills) ->
   $(window).on 'resize', ->
     $scope.$apply reLayout
 
+  $scope.open = (skill) ->
+    if skill.detail != "detail"
+      $scope.showDependencies(skill)
+      for s in $scope.skills
+        s.detail = null
+      skill.detail = "detail"
+    false
+
+  $scope.close = (skill) ->
+    console.log skill
+    skill.detail = null
+    $scope.hideDependencies(skill)
+
+  $scope.showDependenciesOrOpen = (skill) ->
+    if skill.active
+      $scope.open(skill)
+    else
+      $scope.hideDependencies(skill)
+      $scope.showDependencies(skill)
 
   $scope.showDependencies = (skill) ->
     skill.active = "active"
@@ -140,9 +160,10 @@ window.HomeCtrl = ($scope, skills) ->
         $scope.showDependencies(s)
       else
         s.dependency = "hide-dependency" if not s.active
-        #s.dependency = "dependency" for s in $scope.skills when s._id in (skill.dependencies or [])
 
-  $scope.hideDependencies = ->
-    for s in $scope.skills
-      delete s.active
-      delete s.dependency
+  $scope.hideDependencies = (skill) ->
+    if not skill?.detail
+      for s in $scope.skills
+        s.active = null
+        s.detail = null
+        s.dependency = null

@@ -23,7 +23,7 @@ timelineHeight = 50px
   }
 }
 
-.skill {
+.skill-container {
   absolute: top left
   background: rgba(255, 255, 255, 0.6)
   border: 1px solid rgba(0, 0, 0, 0.3)
@@ -31,15 +31,38 @@ timelineHeight = 50px
   color: black
   overflow: hidden
   padding: 6px
-  text-decoration: none
-  text-overflow: ellipsis
-  whitespace: nowrap
 
   &:hover, &.active {
     box-shadow: 0px 0px 40px white
     border-color: #7793A8
     text-decoration: none
     background: rgba(255, 255, 255, 0.9)
+  }
+
+  & p.description {
+    margin-top: 16px
+    width: 440px
+  }
+
+  &.detail {
+    width: 480px !important
+    height: 240px !important
+    background: rgba(255, 255, 255, 0.9) !important
+    z-index: 100
+    transition width 300ms, height 300ms
+  }
+
+  & p.detail-close {
+    background-color: #b00
+    color: white
+    padding: 0 5px
+    font-size: 0.8em
+    position: absolute
+    top: 2px
+    left: 458px
+    &:hover {
+      cursor: pointer
+    }
   }
 
   &.dependency {
@@ -49,6 +72,16 @@ timelineHeight = 50px
 
   &.hide-dependency {
     background: rgba(255, 255, 255, 0.3)
+  }
+}
+
+.skill {
+  text-decoration: none
+  text-overflow: ellipsis
+  whitespace: nowrap
+
+  &:hover, &.active {
+    text-decoration: none
   }
 }
 
