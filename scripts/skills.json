@@ -896,7 +896,7 @@
     "description":"Hops on one foot.",
     "developmentalAge":48,
     "developmentalAgeRange":12,
-    "dependencies":"68",
+    "dependencies":"79,82",
     "categories":"Motor"
   },
   {
@@ -1580,7 +1580,7 @@
     "description":"Speech is understandable most of the time.",
     "developmentalAge":36,
     "developmentalAgeRange":9,
-    "dependencies":"",
+    "dependencies":"238",
     "categories":"Cognitive"
   },
   {
@@ -1607,7 +1607,7 @@
     "description":"Indicates negatives by inserting \"no\" or \"not\" before a simple noun or verb phrase: \"Not baby.\"",
     "developmentalAge":36,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"235",
     "categories":"Cognitive"
   },
   {
@@ -1684,7 +1684,7 @@
   },
   {
     "skillId":188,
-    "title":"Counts to 20 or more",
+    "title":"Counts to 20",
     "description":"Rote counts to 20 or more.",
     "developmentalAge":48,
     "developmentalAgeRange":12,
@@ -2111,7 +2111,7 @@
     "description":"Expresses negative statements by tacking on a negative word such as \"no\" or \"not\": \"Not more milk.\"",
     "developmentalAge":24,
     "developmentalAgeRange":12,
-    "dependencies":"179",
+    "dependencies":"",
     "categories":"Language"
   },
   {
@@ -2350,7 +2350,7 @@
   },
   {
     "skillId":262,
-    "title":"",
+    "title":"Outgoing; friendly; overly enthusiastic at times.",
     "description":"Outgoing; friendly; overly enthusiastic at times.",
     "developmentalAge":48,
     "developmentalAgeRange":12,
@@ -2467,7 +2467,7 @@
   },
   {
     "skillId":275,
-    "title":"",
+    "title":"Tells a familiar story while looking at pictures in a book.",
     "description":"Tells a familiar story while looking at pictures in a book.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
@@ -2534,7 +2534,7 @@
     "description":"Speech is almost entirely grammatically correct.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"256",
     "categories":"Language"
   },
   {
@@ -2606,7 +2606,7 @@
     "description":"Generally subservient to parent or caregiver requests.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"246",
     "categories":"Social"
   },
   {
@@ -2638,7 +2638,7 @@
   },
   {
     "skillId":294,
-    "title":"",
+    "title":"Boasts about accomplishments.",
     "description":"Boasts about accomplishments.",
     "developmentalAge":60,
     "developmentalAgeRange":12,
@@ -2647,7 +2647,7 @@
   },
   {
     "skillId":295,
-    "title":"",
+    "title":"Often has an imaginary friend",
     "description":"Often has an imaginary friend",
     "developmentalAge":60,
     "developmentalAgeRange":12,
@@ -2683,7 +2683,7 @@
   },
   {
     "skillId":299,
-    "title":"",
+    "title":"Talks a lot.",
     "description":"Talks a lot.",
     "developmentalAge":72,
     "developmentalAgeRange":12,
@@ -2710,7 +2710,7 @@
   },
   {
     "skillId":302,
-    "title":"",
+    "title":"Enthusiastic and inquisitive about surroundings and everyday events.",
     "description":"Enthusiastic and inquisitive about surroundings and everyday events.",
     "developmentalAge":72,
     "developmentalAgeRange":12,
@@ -2768,7 +2768,7 @@
     "description":"Has mood swings towards primary caregiver depending on the day",
     "developmentalAge":72,
     "developmentalAgeRange":12,
-    "dependencies":"",
+    "dependencies":"290",
     "categories":"Social"
   },
   {

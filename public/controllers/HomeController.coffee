@@ -132,38 +132,52 @@ window.HomeCtrl = ($scope, skills) ->
   $(window).on 'resize', ->
     $scope.$apply reLayout
 
-  $scope.open = (skill) ->
-    if skill.detail != "detail"
-      $scope.showDependencies(skill)
-      for s in $scope.skills
-        s.detail = null
-      skill.detail = "detail"
-    false
+  $scope.logs = []
+  $scope.log = (what) ->
+    return unless isDebug()
+    console.log what
+    $scope.logs.push what
+    $scope.notice = $scope.logs.slice(-10).reverse()
 
-  $scope.close = (skill) ->
-    console.log skill
-    skill.detail = null
-    $scope.hideDependencies(skill)
+  $scope.debounce = null
+  debounce = ->
+    $scope.debounce = true
+    setTimeout ( ->
+      $scope.debounce = null
+    ), 500
 
-  $scope.showDependenciesOrOpen = (skill) ->
-    if skill.active
-      $scope.open(skill)
+  $scope.open = (ev, skill) ->
+    return if $scope.debounce
+    $scope.log "open"
+    skill.state = "detail"
+
+  $scope.close = (ev, skill) ->
+    $scope.log "close"
+    debounce()
+    skill.state = "active"
+
+  $scope.showDependenciesOrOpen = (ev, skill) ->
+    $scope.log "showDependenciesOrOpen " + skill.state
+    return if skill.state == "detail"
+    if skill.state == "active"
+      $scope.open(ev, skill)
     else
-      $scope.hideDependencies(skill)
-      $scope.showDependencies(skill)
+      debounce()
+      $scope.clear(ev, skill)
+      $scope.showDependencies(ev, skill)
 
-  $scope.showDependencies = (skill) ->
-    skill.active = "active"
+  $scope.showDependencies = (ev, skill) ->
+    $scope.log "showDependencies"
+    skill.state = "active"
     for s in $scope.skills
       if s._id in (skill.dependencies or [])
-        s.dependency = "dependency"
-        $scope.showDependencies(s)
+        s.state = "dependency"
+        $scope.showDependencies(ev, s)
       else
-        s.dependency = "hide-dependency" if not s.active
+        s.state = "hide-dependency" if not s.state == "active"
 
-  $scope.hideDependencies = (skill) ->
-    if not skill?.detail
+  $scope.clear = (ev, skill) ->
+    $scope.log "clear"
+    if not skill?.state
       for s in $scope.skills
-        s.active = null
-        s.detail = null
-        s.dependency = null
+        s.state = null
