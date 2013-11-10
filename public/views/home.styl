@@ -75,13 +75,19 @@ timelineHeight = 50px
     background: rgba(255, 255, 255, 0.9) !important
     z-index: 100
     transition width 300ms, height 300ms
+
+    p.detail-close {
+      display: block
+    }
   }
 
-  & p.detail-close {
+  p.detail-close {
     background-color: #b00
     color: white
+    display: none
     padding: 0 5px
     font-size: 0.8em
+    margin: 0
     position: absolute
     top: 2px
     left: 458px
@@ -138,24 +144,25 @@ timelineHeight = 50px
 
 .welcome {
   fixed: top left
-  background: rgba(0, 0, 0, 0.6)
+  background: rgba(239,186,143, 1)
   height: 100%
   width: 100%
 
   .content {
-    absolute: left 50% top 50%
-    border-radius: 6px
-    background: #E6ECF0
+    absolute: left 50% top
+    background: #F8F8F8
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4)
-    height: 500px
-    padding: 6px 12px
-    width: 600px
+    height: 100%
+    line-height: 1.8em
+    padding: 6px 36px
+    text-align: center
+    width: 420px
 
     margin-left: -(@width / 2)
-    margin-top: -(@height / 2)
   }
 
   .exploreChart {
     position: static
+    border-radius: 3px
   }
 }
