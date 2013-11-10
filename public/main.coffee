@@ -6,7 +6,6 @@ fixupSkills = (skills) ->
 angular.module('wwmc', ['ui.router']).config [
   '$stateProvider',
   '$urlRouterProvider',
-  '$locationProvider',
   ($stateProvider, $urlRouterProvider, $locationProvider) ->
     $stateProvider.state('skills', {
       url: '/skills'
@@ -30,7 +29,6 @@ angular.module('wwmc', ['ui.router']).config [
     })
 
     $urlRouterProvider.otherwise 'skills'
-    $locationProvider.html5Mode true
 ]
 
 angular.module('wwmc').directive 'scrollWithPage', ($document) ->
