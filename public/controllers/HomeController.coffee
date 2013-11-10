@@ -95,7 +95,7 @@ window.HomeCtrl = ($scope, skills) ->
     hScale = windowWidth / (12 * 4)
     vScale = 36
     topPadding = 40
-    hPadding = 16
+    hPadding = 30
 
     $scope.vScale = vScale
     $scope.hScale = hScale

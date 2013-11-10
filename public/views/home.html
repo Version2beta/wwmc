@@ -1,5 +1,7 @@
 <section class="home" style="height: {{skillsHeight}}px">
-  <div class="category" ng-repeat="category in categories" ng-style="category" style="width: {{skillsWidth}}px">{{category.name}}</div>
+  <div class="category" ng-repeat="category in categories" ng-style="category" style="width: {{skillsWidth}}px">
+    <span class="categoryText">{{category.name}}</span>
+  </div>
   <div class="year" ng-repeat="year in years" ng-style="year"></div>
   <a href="/#/skills/{{skill.id}}" ng-repeat="skill in skills" id="{{skill.id}}"
     class="skill {{skill.dependency}} {{skill.active}}"
