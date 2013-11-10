@@ -3,6 +3,7 @@
     <span class="categoryText">{{category.name}}</span>
   </div>
   <div class="year" ng-repeat="year in years" ng-style="year"></div>
+  <canvas class="dependencyLines" width="{{skillsWidth}}" height="{{skillsHeight}}" style="width: {{skillsWidth}}px; height: {{skillsHeight}}px"></canvas>
   <div ng-repeat="skill in skills"
     id="container-{{skill.id}}"
     class="skill-container {{skill.dependency}} {{skill.active}} {{skill.detail}}"

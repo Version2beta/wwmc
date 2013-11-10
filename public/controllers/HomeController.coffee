@@ -87,8 +87,23 @@ layoutTimeline = ($scope, {hScale, vScale, maxMonth, topPadding, hPadding}) ->
       left: (hScale * month + hPadding) + 'px'
     }
 
+centerPointForSkill = (skill) ->
+  left = parseFloat skill.layout.left
+  top = parseFloat skill.layout.top
+  width = parseFloat skill.layout.width
+  {
+    left: width / 2 + left
+    top: 30 / 2 + top
+  }
+
 window.HomeCtrl = ($scope, skills) ->
   $scope.skills = skills
+
+  # idk how to do this correctly :(
+  dependencyCtx = document.querySelector(".dependencyLines").getContext("2d")
+
+  skillsById = _.indexBy skills, 'id'
+  highlightedDependencies = []
 
   reLayout = ->
     windowWidth = $(window).width()
@@ -152,18 +167,36 @@ window.HomeCtrl = ($scope, skills) ->
       $scope.hideDependencies(skill)
       $scope.showDependencies(skill)
 
+  drawDependencies = (skill, depth=0) ->
+    return if depth > 10 # prevent infinite loops on cyclic structures
+    skillPosition = centerPointForSkill skill
+
+    dependencies = (skill.dependencies or []).map (id) ->
+      skillsById[id]
+
+    for dependency in dependencies
+      dependencyPosition = centerPointForSkill dependency
+      dependencyCtx.moveTo skillPosition.left, skillPosition.top
+      dependencyCtx.lineTo dependencyPosition.left, dependencyPosition.top
+      dependency.dependency = "dependency"
+      dependencies = dependencies.concat drawDependencies dependency, depth
+
+    dependencies
+
   $scope.showDependencies = (skill) ->
     skill.active = "active"
-    for s in $scope.skills
-      if s._id in (skill.dependencies or [])
-        s.dependency = "dependency"
-        $scope.showDependencies(s)
-      else
-        s.dependency = "hide-dependency" if not s.active
 
-  $scope.hideDependencies = (skill) ->
-    if not skill?.detail
-      for s in $scope.skills
-        s.active = null
-        s.detail = null
-        s.dependency = null
+    dependencyCtx.beginPath()
+    highlightedDependencies = drawDependencies skill
+    dependencyCtx.strokeStyle = "rgba(0, 0, 0, 0.5)"
+    dependencyCtx.lineWidth = 3
+    dependencyCtx.stroke()
+
+    highlightedDependencies.push skill
+
+  $scope.hideDependencies = ->
+    dependencyCtx.clearRect 0, 0, $scope.skillsWidth, $scope.skillsHeight
+    while dep = highlightedDependencies.pop()
+      dep.active = null
+      dep.detail = null
+      dep.dependency = null
