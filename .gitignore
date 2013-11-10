@@ -1,4 +1,4 @@
 node_modules/
-public/controllers/**.js
+public/controllers/*.js
 public/main.js
 public/css/main.css

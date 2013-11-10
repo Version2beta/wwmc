@@ -10,13 +10,13 @@ skills = skills.map (skill) ->
   return skill
 
 skillIdMapper = (skills, id) ->
-  (skill._id for skill in skills when skill.skillId == +id)[0]
+  return (skill._id for skill in skills when skill.skillId == +id)[0]
 
 remapDependencies = (skills) ->
   skills.map (skill) ->
     if skill.dependencies
       skill.dependencies = skill.dependencies.map (dependency) ->
-        skillIdMapper skills, dependency
+        return skillIdMapper skills, dependency
     skill
 
 MongoClient.connect 'mongodb://localhost:27017/wwmc', (err, db) ->
