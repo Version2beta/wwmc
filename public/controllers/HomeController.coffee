@@ -6,7 +6,7 @@ categoryColors = [
   "#EF8FB5"
 ]
 
-layoutSkills = ($scope, {hScale, vScale}) ->
+layoutSkills = ($scope, {hScale, vScale, topPadding, hPadding}) ->
 
   $scope.skillsHeight = 0
   $scope.skillsWidth = 0
@@ -58,8 +58,8 @@ layoutSkills = ($scope, {hScale, vScale}) ->
     for row in category.rows
       for skill in row.skills
         width = skill.developmentalAgeRange * hScale
-        top = rowIndex * vScale
-        left = skill.developmentalAge * hScale
+        top = rowIndex * vScale + topPadding
+        left = skill.developmentalAge * hScale + hPadding
         skill.layout = {
           width: width + 'px'
           left: left + 'px'
@@ -67,8 +67,8 @@ layoutSkills = ($scope, {hScale, vScale}) ->
           top: top + 'px'
         }
 
-        $scope.skillsHeight = Math.max (top + vScale), $scope.skillsHeight
-        $scope.skillsWidth = Math.max (left + width), $scope.skillsWidth
+        $scope.skillsHeight = Math.max (top + vScale - topPadding), $scope.skillsHeight
+        $scope.skillsWidth = Math.max (left + width + hPadding), $scope.skillsWidth
 
       rowIndex++
 
@@ -79,20 +79,23 @@ layoutSkills = ($scope, {hScale, vScale}) ->
       backgroundColor: categoryColors[i]
     }
 
-layoutTimeline = ($scope, {hScale, vScale, maxMonth}) ->
+layoutTimeline = ($scope, {hScale, vScale, maxMonth, topPadding, hPadding}) ->
   $scope.timelineNotches = for month in [0..maxMonth] by 3
     {
       month
-      left: hScale * month + 'px'
+      left: (hScale * month + hPadding) + 'px'
     }
 
-window.HomeCtrl = ($scope, $http, $modal) ->
+window.HomeCtrl = ($scope, skills) ->
+  $scope.skills = skills
+
   reLayout = ->
     windowWidth = $(window).width()
-
     # width of screen is 4 years
     hScale = windowWidth / (12 * 4)
     vScale = 36
+    topPadding = 40
+    hPadding = 30
 
     $scope.vScale = vScale
     $scope.hScale = hScale
@@ -100,8 +103,9 @@ window.HomeCtrl = ($scope, $http, $modal) ->
     layoutSkills $scope, {
       hScale
       vScale
+      topPadding
+      hPadding
     }
-
 
     maxSkill = _.max $scope.skills, (skill) ->
       skill.developmentalAge + skill.developmentalAgeRange
@@ -112,34 +116,21 @@ window.HomeCtrl = ($scope, $http, $modal) ->
     $scope.years = [0..maxYear].map (year) ->
       {
         year
-        left: hScale * 12 * year + 'px'
+        left: (hScale * 12 * year + hPadding) + 'px'
       }
 
     layoutTimeline $scope, {
       hScale
       vScale
+      topPadding
+      hPadding
       maxMonth
     }
 
+  reLayout()
   $(window).on 'resize', ->
     $scope.$apply reLayout
 
-
-  $http.get('/skills')
-    .success (skills) ->
-      $scope.skills = skills
-      reLayout()
-    .error (err) ->
-      alert "Error loading skills: #{err}"
-
-  $scope.open = (datas) ->
-    $modal.open {
-      templateUrl: 'views/modal.html'
-      controller: ModalCtrl
-      resolve: {
-        data: -> return datas
-      }
-    }
 
   $scope.showDependencies = (skill) ->
     skill.active = "active"

@@ -8,10 +8,19 @@ timelineHeight = 50px
 }
 
 .category {
-  color: white
-  font-size: 160px
   padding: 6px 0
-  text-shadow: 0 0 2px white
+  position: relative
+
+  .categoryText {
+    absolute: top 260px left
+    color: white
+    display: block
+    font-size: 30px
+    text-align: right
+    transform: rotate(-90deg)
+    transform-origin: top left
+    width: 250px
+  }
 }
 
 .skill {
@@ -43,7 +52,6 @@ timelineHeight = 50px
   }
 }
 
-
 .timeline {
   color: white
   background: #2B2B2B
@@ -55,14 +63,14 @@ timelineHeight = 50px
 
 .timelineNotch {
   absolute: bottom left
-  background: white
+  background: rgba(255, 255, 255, 0.75)
   height: 20px
   width: 2px
 }
 
 .year {
   absolute: bottom left
-  background: white
+  background: rgba(255, 255, 255, 0.75)
   height: 100%
   width: 4px
 
