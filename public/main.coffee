@@ -1,6 +1,4 @@
 fixupSkills = (skills) ->
-  if !Array.isArray skills
-    return skills.id = skills._id
   skills.forEach (s) ->
     s.id = s._id
   skills
